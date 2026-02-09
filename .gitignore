@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+debug_*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model cache (large files)
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Temporary files
+*.tmp
+*.temp
