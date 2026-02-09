@@ -150,7 +150,7 @@ We study how large language models (LLMs) **reason through their embeddings** by
 ```bibtex
 @misc{choudhary2026hyperbolic,
   title  = {Hyperbolic Geodesics as the Manifold of Logical Reasoning},
-  author = {Choudhary, Yash},
+  author = {Chaudhary, Yash},
   year   = {2026},
   note   = {Extension demonstrating 41\% curvature reduction in Poincaré space}
 }
