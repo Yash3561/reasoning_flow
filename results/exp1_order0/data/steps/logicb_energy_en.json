@@ -1,0 +1,15 @@
+{
+  "label": "logicB:energy_en",
+  "logic": "logicB",
+  "topic": "energy_en",
+  "steps": [
+    "[1] If solar irradiance at Plant S exceeds 900 W/m², then Plant S outputs more than 50 MW.",
+    "[2] If Plant S outputs more than 50 MW, then there is surplus renewable power on the grid segment.",
+    "[3] For any storage unit x, if x is grid-connected, then x can absorb power.",
+    "[4] If there is surplus renewable power on the grid segment and Battery B1 can absorb power, then the controller starts charging B1.",
+    "[5] Solar irradiance at Plant S exceeds 900 W/m².",
+    "[6] Battery B1 is grid-connected.",
+    "[7] There is surplus renewable power on the grid segment and Battery B1 can absorb power.",
+    "[8] The controller starts charging B1."
+  ]
+}

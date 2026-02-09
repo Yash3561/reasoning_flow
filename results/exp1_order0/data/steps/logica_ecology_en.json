@@ -1,0 +1,16 @@
+{
+  "label": "logicA:ecology_en",
+  "logic": "logicA",
+  "topic": "ecology_en",
+  "steps": [
+    "[1] If a floodplain wetland is restored, nutrient retention in the watershed increases.",
+    "[2] If nutrient retention in the watershed increases, downstream algal blooms decrease.",
+    "[3] For any species x, if x is a top predator, x regulates herbivore populations.",
+    "[4] The gray wolf is a top predator.",
+    "[5] A floodplain wetland is restored.",
+    "[6] Nutrient retention in the watershed increases (from [1] and [5]).",
+    "[7] Downstream algal blooms decrease (from [2] and [6]).",
+    "[8] The gray wolf regulates herbivore populations (from [3] and [4]).",
+    "[9] Downstream algal blooms decrease and the gray wolf regulates herbivore populations (from [7] and [8])."
+  ]
+}

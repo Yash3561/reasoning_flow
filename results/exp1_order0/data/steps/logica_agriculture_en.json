@@ -1,0 +1,16 @@
+{
+  "label": "logicA:agriculture_en",
+  "logic": "logicA",
+  "topic": "agriculture_en",
+  "steps": [
+    "[1] If we apply nitrogen fertilizer, then leaf chlorophyll increases.",
+    "[2] If leaf chlorophyll increases, then grain yield rises.",
+    "[3] For every field x, if x has soil pH below 5.5, then x requires liming.",
+    "[4] Field Alpha has soil pH below 5.5.",
+    "[5] We apply nitrogen fertilizer.",
+    "[6] Therefore leaf chlorophyll increases.",
+    "[7] Therefore grain yield rises.",
+    "[8] Therefore Field Alpha requires liming.",
+    "[9] Thus grain yield rises and Field Alpha requires liming."
+  ]
+}

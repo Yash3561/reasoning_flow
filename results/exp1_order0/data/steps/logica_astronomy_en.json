@@ -1,0 +1,16 @@
+{
+  "label": "logicA:astronomy_en",
+  "logic": "logicA",
+  "topic": "astronomy_en",
+  "steps": [
+    "[1] If a star is on the main sequence, then it is fusing hydrogen in its core.",
+    "[2] If a star is fusing hydrogen in its core, then it emits a relatively stable luminosity.",
+    "[3] For every object x, if x is an exoplanet, then x orbits a star.",
+    "[4] Kepler-186f is an exoplanet.",
+    "[5] The Sun is on the main sequence.",
+    "[6] The Sun is fusing hydrogen in its core (from [1] and [5]).",
+    "[7] The Sun emits a relatively stable luminosity (from [2] and [6]).",
+    "[8] Kepler-186f orbits a star (from [3] and [4]).",
+    "[9] The Sun emits a relatively stable luminosity and Kepler-186f orbits a star (from [7] and [8])."
+  ]
+}

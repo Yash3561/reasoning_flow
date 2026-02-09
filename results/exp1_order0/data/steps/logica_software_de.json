@@ -1,0 +1,16 @@
+{
+  "label": "logicA:software_de",
+  "logic": "logicA",
+  "topic": "software_de",
+  "steps": [
+    "[1] Wenn das Projekt eine gültige Paketmanifestdatei enthält, dann lassen sich die Abhängigkeiten erfolgreich installieren.",
+    "[2] Wenn die Abhängigkeiten erfolgreich installiert sind, dann wird die Anwendung erfolgreich gebaut.",
+    "[3] Für jedes Modul x gilt: Wenn x bestandene Tests hat, dann markiert die CI x als getestet.",
+    "[4] Das Auth‑Modul hat bestandene Tests.",
+    "[5] Das Projekt enthält eine gültige Paketmanifestdatei.",
+    "[6] Daher lassen sich die Abhängigkeiten erfolgreich installieren.",
+    "[7] Daher wird die Anwendung erfolgreich gebaut.",
+    "[8] Daher markiert die CI das Auth‑Modul als getestet.",
+    "[9] Daher wird die Anwendung erfolgreich gebaut und die CI markiert das Auth‑Modul als getestet."
+  ]
+}

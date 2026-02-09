@@ -1,0 +1,15 @@
+{
+  "label": "logicB:abstract",
+  "logic": "logicB",
+  "topic": null,
+  "steps": [
+    "[1] A→B",
+    "[2] B→C",
+    "[3] ∀x(P(x)→Q(x))",
+    "[4] (C ∧ Q(a))→D",
+    "[5] A",
+    "[6] P(a)",
+    "[7] C ∧ Q(a)  (from [1–3],[5],[6])",
+    "[8] D  (from [4] and [7])"
+  ]
+}

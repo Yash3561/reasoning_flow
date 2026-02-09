@@ -1,0 +1,19 @@
+{
+  "label": "logicC:education_de",
+  "logic": "logicC",
+  "topic": "education_de",
+  "steps": [
+    "[1] Wenn die Studierenden am Vorkurs teilnehmen, dann verstehen sie das erforderliche Grundkonzept.",
+    "[2] Wenn sie das Grundkonzept verstehen, dann können sie grundlegende Aufgaben zum Thema lösen.",
+    "[3] Wenn sie grundlegende Aufgaben lösen können und die Lehrkraft einen Übungssatz aufgibt, dann bestehen sie den formativen Test.",
+    "[4] Die Lehrkraft gibt einen Übungssatz auf.",
+    "[5] Die Studierenden nehmen am Vorkurs teil.",
+    "[6] Für alle Studierenden x gilt: Wenn x alle Wochenaufgaben erledigt, dann versteht x den Kernstoff.",
+    "[7] Alex erledigt alle Wochenaufgaben.",
+    "[8] Für alle Studierenden x gilt: Wenn x den Kernstoff versteht, dann erzielt x entweder eine hohe Note in der Abschlussklausur oder erstellt ein starkes Abschlussprojekt.",
+    "[9] Sie verstehen das erforderliche Grundkonzept.",
+    "[10] Sie können grundlegende Aufgaben zum Thema lösen.",
+    "[11] Sie bestehen den formativen Test.",
+    "[12] Alex versteht den Kernstoff und erzielt entweder eine hohe Note in der Abschlussklausur oder erstellt ein starkes Abschlussprojekt."
+  ]
+}

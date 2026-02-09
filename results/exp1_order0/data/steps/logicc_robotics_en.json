@@ -1,0 +1,19 @@
+{
+  "label": "logicC:robotics_en",
+  "logic": "logicC",
+  "topic": "robotics_en",
+  "steps": [
+    "[1] If the battery level is sufficient for boot, then the boot sequence proceeds.",
+    "[2] If the boot sequence proceeds, then the motion controller becomes ready.",
+    "[3] If the motion controller is ready and the emergency stop is released, then motion is authorized.",
+    "[4] The emergency stop is released.",
+    "[5] The battery level is sufficient for boot.",
+    "[6] For any robot x, if x's perception module is active, then x detects obstacles.",
+    "[7] Robot a's perception module is active.",
+    "[8] For any robot x, if x detects obstacles, then x either plans an avoidance path or stops.",
+    "[9] Therefore the boot sequence proceeds (from [1] and [5]).",
+    "[10] Therefore the motion controller becomes ready (from [2] and [9]).",
+    "[11] Therefore motion is authorized (from [3], [10], and [4]).",
+    "[12] Therefore robot a detects obstacles and either plans an avoidance path or stops (from [6], [7], and [8])."
+  ]
+}

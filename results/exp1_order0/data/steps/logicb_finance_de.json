@@ -1,0 +1,15 @@
+{
+  "label": "logicB:finance_de",
+  "logic": "logicB",
+  "topic": "finance_de",
+  "steps": [
+    "[1] Wenn die Zentralbank den Leitzins senkt, sinken die Refinanzierungskosten der Geschäftsbanken.",
+    "[2] Wenn die Refinanzierungskosten der Geschäftsbanken sinken, weitet die Bank das Kreditangebot aus.",
+    "[3] Für jeden Kreditnehmer x gilt: Wenn der Schuldendienstdeckungsgrad (DSCR) von x größer als 1,5 ist, hat x ein geringes Ausfallrisiko.",
+    "[4] Wenn die Bank das Kreditangebot ausweitet und Kreditnehmer a ein geringes Ausfallrisiko hat, dann wird der Kredit an a genehmigt.",
+    "[5] Die Zentralbank senkt den Leitzins.",
+    "[6] Der DSCR von Kreditnehmer a ist größer als 1,5.",
+    "[7] Die Bank weitet das Kreditangebot aus und Kreditnehmer a hat ein geringes Ausfallrisiko (aus [1–3],[5],[6]).",
+    "[8] Der Kredit an a wird genehmigt (aus [4] und [7])."
+  ]
+}

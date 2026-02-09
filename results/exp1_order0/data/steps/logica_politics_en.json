@@ -1,0 +1,16 @@
+{
+  "label": "logicA:politics_en",
+  "logic": "logicA",
+  "topic": "politics_en",
+  "steps": [
+    "[1] If the bill passes committee, then it reaches the floor.",
+    "[2] If the bill reaches the floor, then it is scheduled for a vote.",
+    "[3] For every legislator x, if x violates the ethics rules, then x is formally investigated.",
+    "[4] Senator Lee violates the ethics rules.",
+    "[5] The bill passes committee.",
+    "[6] The bill reaches the floor (from [1] and [5]).",
+    "[7] The bill is scheduled for a vote (from [2] and [6]).",
+    "[8] Senator Lee is formally investigated (from [3] and [4]).",
+    "[9] The bill is scheduled for a vote and Senator Lee is formally investigated (from [7] and [8])."
+  ]
+}

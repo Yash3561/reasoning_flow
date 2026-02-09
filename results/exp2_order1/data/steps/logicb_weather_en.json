@@ -1,0 +1,15 @@
+{
+  "label": "logicB:weather_en",
+  "logic": "logicB",
+  "topic": "weather_en",
+  "steps": [
+    "[1] If a strong onshore wind develops, then moist marine air moves inland.",
+    "[2] If moist marine air moves inland, then cloud cover thickens.",
+    "[3] For any site x, if a sea-breeze front reaches x, then x reports rising humidity.",
+    "[4] If cloud cover thickens and Harbor Point reports rising humidity, then rain is likely soon.",
+    "[5] A strong onshore wind develops.",
+    "[6] A sea-breeze front reaches Harbor Point.",
+    "[7] Cloud cover thickens and Harbor Point reports rising humidity. (from [1–3], [5], [6])",
+    "[8] Therefore, rain is likely soon. (from [4] and [7])"
+  ]
+}

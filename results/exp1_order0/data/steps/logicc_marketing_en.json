@@ -1,0 +1,19 @@
+{
+  "label": "logicC:marketing_en",
+  "logic": "logicC",
+  "topic": "marketing_en",
+  "steps": [
+    "[1] If we launch a social media campaign, then we generate website traffic.",
+    "[2] If we generate website traffic, then we collect qualified leads.",
+    "[3] If we have both qualified leads and a prepared nurturing email sequence, then we convert leads into customers.",
+    "[4] We have a prepared nurturing email sequence.",
+    "[5] We launch a social media campaign.",
+    "[6] For every prospect x, if x matches our ideal customer profile, then x is eligible for targeted messaging.",
+    "[7] Prospect a matches our ideal customer profile.",
+    "[8] For every prospect x, if x is eligible for targeted messaging, then x either books a demo or starts a free trial.",
+    "[9] We generate website traffic. (from [1] and [5])",
+    "[10] We collect qualified leads. (from [2] and [9])",
+    "[11] We convert leads into customers. (from [3] and [10] and [4])",
+    "[12] Prospect a is eligible for targeted messaging, and either a books a demo or a starts a free trial. (from [6], [7], [8])"
+  ]
+}

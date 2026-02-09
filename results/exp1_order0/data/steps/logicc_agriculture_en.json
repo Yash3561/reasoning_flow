@@ -1,0 +1,19 @@
+{
+  "label": "logicC:agriculture_en",
+  "logic": "logicC",
+  "topic": "agriculture_en",
+  "steps": [
+    "[1] If the soil is moist, the seeds can germinate.",
+    "[2] If the seeds can germinate, seedlings will emerge.",
+    "[3] If seedlings have emerged and the temperature is warm enough, the field establishes a viable stand.",
+    "[4] The temperature is warm enough.",
+    "[5] The soil is moist.",
+    "[6] For every plant x, if x tests positive for late blight spores, then x faces a blight infection risk.",
+    "[7] Plant a tests positive for late blight spores.",
+    "[8] For every plant x, if x faces a blight infection risk, then either x should be sprayed with fungicide or x will likely suffer yield loss.",
+    "[9] The seeds can germinate.",
+    "[10] Seedlings will emerge.",
+    "[11] The field establishes a viable stand.",
+    "[12] Plant a faces a blight infection risk, and either it should be sprayed with fungicide or it will likely suffer yield loss."
+  ]
+}

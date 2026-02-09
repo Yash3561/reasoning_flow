@@ -1,0 +1,16 @@
+{
+  "label": "logicA:sports_de",
+  "logic": "logicA",
+  "topic": "sports_de",
+  "steps": [
+    "[1] Wenn das Team das Halbfinale gewinnt, dann qualifiziert sich das Team für das Finale.",
+    "[2] Wenn sich das Team für das Finale qualifiziert, dann spielt das Team um die Meisterschaft.",
+    "[3] Für jede Athletin und jeden Athleten gilt: Wenn die Person den Dopingtest besteht, dann ist die Person startberechtigt.",
+    "[4] Athlet A hat den Dopingtest bestanden.",
+    "[5] Das Team hat das Halbfinale gewonnen.",
+    "[6] Das Team hat sich für das Finale qualifiziert.",
+    "[7] Das Team spielt um die Meisterschaft.",
+    "[8] Athlet A ist startberechtigt.",
+    "[9] Das Team spielt um die Meisterschaft und Athlet A ist startberechtigt."
+  ]
+}

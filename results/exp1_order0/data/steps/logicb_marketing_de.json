@@ -1,0 +1,15 @@
+{
+  "label": "logicB:marketing_de",
+  "logic": "logicB",
+  "topic": "marketing_de",
+  "steps": [
+    "[1] Wenn wir das Werbebudget für High-Intent-Keywords erhöhen, steigen die Klicks.",
+    "[2] Wenn die Klicks steigen, nimmt der Traffic auf der Landingpage zu.",
+    "[3] Für jedes Kundensegment x gilt: Wenn wir x ein personalisiertes Angebot liefern, steigt die Konversionsrate von x.",
+    "[4] Wenn der Landingpage-Traffic zunimmt und die Konversionsrate von Segment a steigt, nehmen die Gesamtkonversionen zu.",
+    "[5] Wir haben das Werbebudget für High-Intent-Keywords erhöht.",
+    "[6] Wir haben Segment a ein personalisiertes Angebot unterbreitet.",
+    "[7] Der Landingpage-Traffic hat zugenommen und die Konversionsrate von Segment a ist gestiegen. (aus [1–3], [5], [6])",
+    "[8] Die Gesamtkonversionen sind gestiegen. (aus [4] und [7])"
+  ]
+}

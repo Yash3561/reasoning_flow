@@ -1,0 +1,19 @@
+{
+  "label": "logicC:healthcare_de",
+  "logic": "logicC",
+  "topic": "healthcare_de",
+  "steps": [
+    "[1] Wenn sich die Patientin/der Patient mit Fieber und Husten vorstellt, wird ein Thorax-Röntgen angeordnet.",
+    "[2] Wenn ein Thorax-Röntgen angeordnet wird, liegt anschließend ein radiologischer Befund vor.",
+    "[3] Wenn der radiologische Befund vorliegt und die Sauerstoffsättigung unter 90 % liegt, wird eine stationäre Pneumoniebehandlung eingeleitet.",
+    "[4] Die Sauerstoffsättigung liegt unter 90 %.",
+    "[5] Die Patientin/der Patient stellt sich mit Fieber und Husten vor.",
+    "[6] Für alle Patientinnen und Patienten x gilt: Wenn x in ein Diabetesprogramm eingeschrieben ist, dann hat x ein dokumentiertes HbA1c-Ergebnis.",
+    "[7] Patient a ist in ein Diabetesprogramm eingeschrieben.",
+    "[8] Für alle Patientinnen und Patienten x gilt: Wenn x ein dokumentiertes HbA1c-Ergebnis hat, dann ist dieses entweder im Zielbereich oder darunter, oder darüber.",
+    "[9] Es wird ein Thorax-Röntgen angeordnet.",
+    "[10] Der radiologische Befund liegt vor.",
+    "[11] Es wird eine stationäre Pneumoniebehandlung eingeleitet.",
+    "[12] Patient a hat ein dokumentiertes HbA1c-Ergebnis, und dieses ist entweder im Zielbereich oder darunter, oder darüber."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "logicA:law_de",
+  "logic": "logicA",
+  "topic": "law_de",
+  "steps": [
+    "[1] Wenn die Parteien eine Geheimhaltungsvereinbarung (NDA) unterzeichnet haben, besteht eine vertragliche Vertraulichkeitspflicht.",
+    "[2] Wenn eine vertragliche Vertraulichkeitspflicht besteht, hat die klagende Partei ein gesetzliches Recht auf Schutz ihrer Geschäftsgeheimnisse.",
+    "[3] Für jede Person x gilt: Wenn x als Rechtsanwältin oder Rechtsanwalt zugelassen ist, unterliegt x der anwaltlichen Verschwiegenheitspflicht.",
+    "[4] Lee ist als Rechtsanwalt zugelassen.",
+    "[5] Die Parteien haben eine Geheimhaltungsvereinbarung (NDA) unterzeichnet.",
+    "[6] Es besteht eine vertragliche Vertraulichkeitspflicht (aus [1] und [5]).",
+    "[7] Die klagende Partei hat ein gesetzliches Recht auf Schutz ihrer Geschäftsgeheimnisse (aus [2] und [6]).",
+    "[8] Lee unterliegt der anwaltlichen Verschwiegenheitspflicht (aus [3] und [4]).",
+    "[9] Die klagende Partei hat ein gesetzliches Recht auf Schutz ihrer Geschäftsgeheimnisse und Lee unterliegt der anwaltlichen Verschwiegenheitspflicht (aus [7] und [8])."
+  ]
+}

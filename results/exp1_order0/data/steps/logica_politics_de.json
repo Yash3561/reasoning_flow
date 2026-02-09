@@ -1,0 +1,16 @@
+{
+  "label": "logicA:politics_de",
+  "logic": "logicA",
+  "topic": "politics_de",
+  "steps": [
+    "[1] Wenn die Gesetzesvorlage den Ausschuss passiert, dann erreicht sie das Plenum.",
+    "[2] Wenn die Gesetzesvorlage das Plenum erreicht, dann wird sie zur Abstimmung angesetzt.",
+    "[3] Für jede Person x im Parlament gilt: Wenn x den Ethikkodex verletzt, wird x formell untersucht.",
+    "[4] Senator Lee verletzt den Ethikkodex.",
+    "[5] Die Gesetzesvorlage passiert den Ausschuss.",
+    "[6] Die Gesetzesvorlage erreicht das Plenum (aus [1] und [5]).",
+    "[7] Die Gesetzesvorlage wird zur Abstimmung angesetzt (aus [2] und [6]).",
+    "[8] Senator Lee wird formell untersucht (aus [3] und [4]).",
+    "[9] Die Gesetzesvorlage wird zur Abstimmung angesetzt und Senator Lee wird formell untersucht (aus [7] und [8])."
+  ]
+}

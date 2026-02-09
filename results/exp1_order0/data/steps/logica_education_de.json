@@ -1,0 +1,16 @@
+{
+  "label": "logicA:education_de",
+  "logic": "logicA",
+  "topic": "education_de",
+  "steps": [
+    "[1] Wenn der Lese- und Schreiblehrplan täglichen Phonics-Unterricht enthält, dann entwickelt die Klasse grundlegende Dekodierfähigkeiten.",
+    "[2] Wenn die Klasse grundlegende Dekodierfähigkeiten entwickelt, dann kann die Klasse einfache Texte selbstständig lesen.",
+    "[3] Für jede Schülerin und jeden Schüler x gilt: Wenn x die Nachhilfe nach dem Unterricht besucht, dann verbessern sich die Testergebnisse von x.",
+    "[4] Schüler Alex besucht die Nachhilfe nach dem Unterricht.",
+    "[5] Der Lese- und Schreiblehrplan enthält täglichen Phonics-Unterricht.",
+    "[6] Daher entwickelt die Klasse grundlegende Dekodierfähigkeiten.",
+    "[7] Daher kann die Klasse einfache Texte selbstständig lesen.",
+    "[8] Daher verbessern sich die Testergebnisse von Alex.",
+    "[9] Daher kann die Klasse einfache Texte selbstständig lesen und die Testergebnisse von Alex verbessern sich."
+  ]
+}

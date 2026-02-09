@@ -1,0 +1,15 @@
+{
+  "label": "logicB:software_en",
+  "logic": "logicB",
+  "topic": "software_en",
+  "steps": [
+    "[1] If a commit is pushed to main, then the CI pipeline runs.",
+    "[2] If the CI pipeline runs, then build artifacts are produced.",
+    "[3] For every service x, if unit tests for x pass, then x is eligible for deployment.",
+    "[4] If build artifacts are produced and service a is eligible for deployment, then service a is deployed to staging.",
+    "[5] A commit is pushed to main.",
+    "[6] Unit tests for service a pass.",
+    "[7] Build artifacts are produced and service a is eligible for deployment (from [1–3], [5], and [6]).",
+    "[8] Service a is deployed to staging (from [4] and [7])."
+  ]
+}

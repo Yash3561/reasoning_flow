@@ -1,0 +1,19 @@
+{
+  "label": "logicC:network_security_en",
+  "logic": "logicC",
+  "topic": "network_security_en",
+  "steps": [
+    "[1] If an inbound connection originates from a blacklisted IP, the IDS flags the connection.",
+    "[2] If the IDS flags the connection, the SIEM opens an incident.",
+    "[3] If the SIEM opens an incident and auto-blocking is enabled, the firewall auto-blocks the source IP.",
+    "[4] Auto-blocking is enabled.",
+    "[5] An inbound connection originates from a blacklisted IP.",
+    "[6] For all hosts x, if host x lacks critical security patches, host x is marked noncompliant.",
+    "[7] Host a lacks critical security patches.",
+    "[8] For all hosts x, if host x is marked noncompliant, then host x is either quarantined to a remediation network or denied access to sensitive subnets.",
+    "[9] The IDS flags the connection.",
+    "[10] The SIEM opens an incident.",
+    "[11] The firewall auto-blocks the source IP.",
+    "[12] Host a is marked noncompliant and is either quarantined to a remediation network or denied access to sensitive subnets."
+  ]
+}

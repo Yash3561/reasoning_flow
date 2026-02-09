@@ -1,0 +1,16 @@
+{
+  "label": "logicA:ecology_de",
+  "logic": "logicA",
+  "topic": "ecology_de",
+  "steps": [
+    "[1] Wenn ein Auenfeuchtgebiet wiederhergestellt wird, steigt die Nährstoffrückhaltung im Einzugsgebiet.",
+    "[2] Wenn die Nährstoffrückhaltung im Einzugsgebiet steigt, nehmen Algenblüten flussabwärts ab.",
+    "[3] Für jede Art x gilt: Wenn x ein Spitzenprädator ist, reguliert x die Herbivorenpopulationen.",
+    "[4] Der Grauwolf ist ein Spitzenprädator.",
+    "[5] Ein Auenfeuchtgebiet wird wiederhergestellt.",
+    "[6] Die Nährstoffrückhaltung im Einzugsgebiet steigt (aus [1] und [5]).",
+    "[7] Algenblüten flussabwärts nehmen ab (aus [2] und [6]).",
+    "[8] Der Grauwolf reguliert die Herbivorenpopulationen (aus [3] und [4]).",
+    "[9] Algenblüten flussabwärts nehmen ab und der Grauwolf reguliert die Herbivorenpopulationen (aus [7] und [8])."
+  ]
+}

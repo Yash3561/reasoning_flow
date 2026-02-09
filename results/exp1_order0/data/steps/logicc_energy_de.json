@@ -1,0 +1,19 @@
+{
+  "label": "logicC:energy_de",
+  "logic": "logicC",
+  "topic": "energy_de",
+  "steps": [
+    "[1] Wenn die solare Einstrahlung die Einschaltschwelle der PV-Anlage überschreitet, erzeugt das PV-Array Gleichstrom.",
+    "[2] Wenn das PV-Array Gleichstrom erzeugt, hat der Wechselrichter ausreichenden DC‑Eingang.",
+    "[3] Wenn der Wechselrichter ausreichenden DC‑Eingang hat und das Netz synchronisiert ist, speist das System Wechselstrom ins Netz ein.",
+    "[4] Das Netz ist synchronisiert.",
+    "[5] Die solare Einstrahlung überschreitet die Einschaltschwelle der PV-Anlage.",
+    "[6] Für jeden Wechselrichter x gilt: Wenn x IEEE 1547 erfüllt, dann ist x für den Netzanschluss zugelassen.",
+    "[7] Wechselrichter a erfüllt IEEE 1547.",
+    "[8] Für jeden Wechselrichter x gilt: Wenn x für den Netzanschluss zugelassen ist, dann steht x entweder unter Versorgerüberwachung oder verfügt über eine integrierte Anti‑Islanding‑Schutzeinrichtung.",
+    "[9] Das PV-Array erzeugt Gleichstrom. (aus [1] und [5])",
+    "[10] Der Wechselrichter hat ausreichenden DC‑Eingang. (aus [2] und [9])",
+    "[11] Das System speist Wechselstrom ins Netz ein. (aus [3] und [10] und [4])",
+    "[12] Wechselrichter a ist für den Netzanschluss zugelassen und steht entweder unter Versorgerüberwachung oder verfügt über eine integrierte Anti‑Islanding‑Schutzeinrichtung. (aus [6], [7], [8])"
+  ]
+}

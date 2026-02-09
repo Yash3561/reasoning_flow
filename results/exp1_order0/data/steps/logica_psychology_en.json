@@ -1,0 +1,16 @@
+{
+  "label": "logicA:psychology_en",
+  "logic": "logicA",
+  "topic": "psychology_en",
+  "steps": [
+    "[1] If the client reports chronic sleep difficulty, then their stress level is elevated.",
+    "[2] If stress is elevated, then concentration declines.",
+    "[3] For any person, if they practice daily mindfulness, then their anxiety decreases.",
+    "[4] The client practices daily mindfulness.",
+    "[5] The client reports chronic sleep difficulty.",
+    "[6] Therefore their stress level is elevated.",
+    "[7] Therefore their concentration declines.",
+    "[8] Therefore the client's anxiety decreases.",
+    "[9] Therefore the client has reduced concentration and decreased anxiety."
+  ]
+}

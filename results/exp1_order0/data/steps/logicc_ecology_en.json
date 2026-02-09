@@ -1,0 +1,19 @@
+{
+  "label": "logicC:ecology_en",
+  "logic": "logicC",
+  "topic": "ecology_en",
+  "steps": [
+    "[1] If the stream has continuous riparian canopy cover, then the stream receives consistent shade.",
+    "[2] If the stream receives consistent shade, then water temperature remains low.",
+    "[3] If water temperature remains low and dissolved oxygen levels are high, then trout successfully reproduce.",
+    "[4] Dissolved oxygen levels are high.",
+    "[5] The stream has continuous riparian canopy cover.",
+    "[6] For any species x, if x is a keystone species in this watershed, then x strongly structures the community.",
+    "[7] Species a is a keystone species in this watershed.",
+    "[8] For any species x, if x strongly structures the community, then x either increases native biodiversity or stabilizes trophic dynamics.",
+    "[9] The stream receives consistent shade (from [1] and [5]).",
+    "[10] Water temperature remains low (from [2] and [9]).",
+    "[11] Trout successfully reproduce (from [3] and [10] and [4]).",
+    "[12] Species a strongly structures the community and either increases native biodiversity or stabilizes trophic dynamics (from [6],[7],[8])."
+  ]
+}

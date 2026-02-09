@@ -1,0 +1,16 @@
+{
+  "label": "logicA:robotics_en",
+  "logic": "logicA",
+  "topic": "robotics_en",
+  "steps": [
+    "[1] If R2 has sufficient battery charge, then R2 can power up its motors.",
+    "[2] If R2 can power up its motors, then R2 can move.",
+    "[3] For every robot x, if x is equipped with a lidar sensor, then x can perform obstacle detection.",
+    "[4] R2 is equipped with a lidar sensor.",
+    "[5] R2 has sufficient battery charge.",
+    "[6] R2 can power up its motors (from [1] and [5]).",
+    "[7] R2 can move (from [2] and [6]).",
+    "[8] R2 can perform obstacle detection (from [3] and [4]).",
+    "[9] R2 can move and can perform obstacle detection (from [7] and [8])."
+  ]
+}

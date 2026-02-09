@@ -1,0 +1,15 @@
+{
+  "label": "logicB:astronomy_de",
+  "logic": "logicB",
+  "topic": "astronomy_de",
+  "steps": [
+    "[1] Wenn der Wirtsstern jung und magnetisch aktiv ist, dann emittiert er starke Ultraviolettstrahlung.",
+    "[2] Wenn der Stern starke Ultraviolettstrahlung emittiert, dann hat das System hohen UV-Fluss.",
+    "[3] Für jeden Planeten x gilt: Wenn x ein Gasriese ist, dann besitzt x eine dichte Wasserstoff-Helium-Atmosphäre.",
+    "[4] Wenn das System hohen UV-Fluss hat und Planet a eine dichte Wasserstoff-Helium-Atmosphäre besitzt, dann sind in der Atmosphäre von Planet a photochemische Dunstschleier wahrscheinlich.",
+    "[5] Der Wirtsstern ist jung und magnetisch aktiv.",
+    "[6] Planet a ist ein Gasriese.",
+    "[7] Das System hat hohen UV-Fluss und Planet a besitzt eine dichte Wasserstoff-Helium-Atmosphäre. (aus [1–3], [5], [6])",
+    "[8] In der Atmosphäre von Planet a sind photochemische Dunstschleier wahrscheinlich. (aus [4] und [7])"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "logicA:marketing_de",
+  "logic": "logicA",
+  "topic": "marketing_de",
+  "steps": [
+    "[1] Wenn wir eine zielgerichtete E-Mail-Kampagne durchführen, dann besuchen Leads die Produkt-Landingpage.",
+    "[2] Wenn Leads die Produkt-Landingpage besuchen, dann steigen die Testanmeldungen.",
+    "[3] Für jedes Lead x gilt: Wenn x unserem Ideal Customer Profile entspricht, dann klickt x auf den personalisierten CTA.",
+    "[4] Lead a entspricht unserem Ideal Customer Profile.",
+    "[5] Wir führen eine zielgerichtete E-Mail-Kampagne durch.",
+    "[6] Leads besuchen die Produkt-Landingpage (aus [1] und [5]).",
+    "[7] Die Testanmeldungen steigen (aus [2] und [6]).",
+    "[8] Lead a klickt auf den personalisierten CTA (aus [3] und [4]).",
+    "[9] Die Testanmeldungen steigen und Lead a klickt auf den personalisierten CTA (aus [7] und [8])."
+  ]
+}

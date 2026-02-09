@@ -1,0 +1,16 @@
+{
+  "label": "logicA:astronomy_de",
+  "logic": "logicA",
+  "topic": "astronomy_de",
+  "steps": [
+    "[1] Wenn ein Stern auf der Hauptreihe ist, dann fusioniert er Wasserstoff in seinem Kern.",
+    "[2] Wenn ein Stern in seinem Kern Wasserstoff fusioniert, dann strahlt er eine relativ stabile Leuchtkraft ab.",
+    "[3] Für jedes Objekt x gilt: Wenn x ein Exoplanet ist, dann umkreist x einen Stern.",
+    "[4] Kepler-186f ist ein Exoplanet.",
+    "[5] Die Sonne befindet sich auf der Hauptreihe.",
+    "[6] Die Sonne fusioniert Wasserstoff in ihrem Kern (aus [1] und [5]).",
+    "[7] Die Sonne strahlt eine relativ stabile Leuchtkraft ab (aus [2] und [6]).",
+    "[8] Kepler-186f umkreist einen Stern (aus [3] und [4]).",
+    "[9] Die Sonne strahlt eine relativ stabile Leuchtkraft ab und Kepler-186f umkreist einen Stern (aus [7] und [8])."
+  ]
+}

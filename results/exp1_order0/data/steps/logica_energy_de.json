@@ -1,0 +1,16 @@
+{
+  "label": "logicA:energy_de",
+  "logic": "logicA",
+  "topic": "energy_de",
+  "steps": [
+    "[1] Wenn die Photovoltaikanlage ausreichende Sonneneinstrahlung erhält, dann erzeugt sie ausreichende Gleichstromleistung.",
+    "[2] Wenn die Photovoltaikanlage ausreichende Gleichstromleistung erzeugt, dann liefert der Wechselrichter dem Haushalt Wechselstrom.",
+    "[3] Für jedes Gerät x gilt: Wenn x Energy-Star-zertifiziert ist, dann ist x energieeffizient.",
+    "[4] Der Kühlschrank ist Energy-Star-zertifiziert.",
+    "[5] Die Photovoltaikanlage erhält ausreichende Sonneneinstrahlung.",
+    "[6] Die Photovoltaikanlage erzeugt ausreichende Gleichstromleistung (aus [1] und [5]).",
+    "[7] Der Wechselrichter liefert dem Haushalt Wechselstrom (aus [2] und [6]).",
+    "[8] Der Kühlschrank ist energieeffizient (aus [3] und [4]).",
+    "[9] Der Wechselrichter liefert dem Haushalt Wechselstrom und der Kühlschrank ist energieeffizient (aus [7] und [8])."
+  ]
+}

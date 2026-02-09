@@ -1,0 +1,16 @@
+{
+  "label": "logicA:abstract",
+  "logic": "logicA",
+  "topic": null,
+  "steps": [
+    "[1] A→B",
+    "[2] B→C",
+    "[3] ∀x(H(x)→J(x))",
+    "[4] H(a)",
+    "[5] A",
+    "[6] B (from [1] and [5])",
+    "[7] C (from [2] and [6])",
+    "[8] J(a) (from [3] and [4])",
+    "[9] C ∧ J(a) (from [7] and [8])"
+  ]
+}

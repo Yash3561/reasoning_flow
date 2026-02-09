@@ -1,0 +1,16 @@
+{
+  "label": "logicA:software_en",
+  "logic": "logicA",
+  "topic": "software_en",
+  "steps": [
+    "[1] If the project contains a valid package manifest, then dependencies install successfully.",
+    "[2] If dependencies install successfully, then the application builds successfully.",
+    "[3] For every module x, if x has tests that pass, then CI marks x as tested.",
+    "[4] The auth module has tests that pass.",
+    "[5] The project contains a valid package manifest.",
+    "[6] Therefore, dependencies install successfully.",
+    "[7] Therefore, the application builds successfully.",
+    "[8] Therefore, CI marks the auth module as tested.",
+    "[9] Therefore, the application builds successfully and CI marks the auth module as tested."
+  ]
+}

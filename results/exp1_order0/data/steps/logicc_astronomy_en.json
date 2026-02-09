@@ -1,0 +1,19 @@
+{
+  "label": "logicC:astronomy_en",
+  "logic": "logicC",
+  "topic": "astronomy_en",
+  "steps": [
+    "[1] If a star's light curve shows periodic dips, then it has a transiting companion.",
+    "[2] If a star has a transiting companion, then the companion's radius can be estimated from the transit depth.",
+    "[3] If the companion's radius is known and the star's radial velocity shows a matching period, then the companion's bulk density can be computed.",
+    "[4] The star's radial velocity shows a periodic signal matching the photometric period.",
+    "[5] The star's light curve shows periodic dips.",
+    "[6] For any object x, if x is a gas giant exoplanet, then x has a hydrogen-dominated atmosphere.",
+    "[7] Planet a is a gas giant exoplanet.",
+    "[8] For any object x, if x has a hydrogen-dominated atmosphere, then its spectrum shows either methane or water absorption.",
+    "[9] The star has a transiting companion. (from [1] and [5])",
+    "[10] The companion's radius can be estimated from the transit depth. (from [2] and [9])",
+    "[11] The companion's bulk density can be computed. (from [3] and [10] and [4])",
+    "[12] Planet a has a hydrogen-dominated atmosphere and its spectrum shows either methane or water absorption. (from [6],[7],[8])"
+  ]
+}

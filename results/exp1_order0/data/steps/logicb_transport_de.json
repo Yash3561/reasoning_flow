@@ -1,0 +1,15 @@
+{
+  "label": "logicB:transport_de",
+  "logic": "logicB",
+  "topic": "transport_de",
+  "steps": [
+    "[1] Wenn die Sperrung des Highway 7 aufgehoben wird, dann wird der Highway 7 für den Verkehr wieder geöffnet.",
+    "[2] Wenn der Highway 7 wieder geöffnet wird, dann darf der Verkehr auf den Highway 7 einfahren.",
+    "[3] Für jeden Lkw x gilt: Wenn x die Wiegestation besteht, dann ist x für die Nutzung des Highway 7 freigegeben.",
+    "[4] Wenn der Verkehr auf den Highway 7 einfahren darf und Lkw A für die Nutzung des Highway 7 freigegeben ist, dann darf Lkw A auf den Highway 7 einfahren.",
+    "[5] Die Sperrung des Highway 7 ist aufgehoben.",
+    "[6] Lkw A hat die Wiegestation bestanden.",
+    "[7] Der Verkehr darf auf den Highway 7 einfahren und Lkw A ist für die Nutzung des Highway 7 freigegeben. (aus [1–3],[5],[6])",
+    "[8] Lkw A darf auf den Highway 7 einfahren. (aus [4] und [7])"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "label": "logicB:history_de",
+  "logic": "logicB",
+  "topic": "history_de",
+  "steps": [
+    "[1] Wenn die Krone die Steuern erhöhte, wuchs die öffentliche Unzufriedenheit.",
+    "[2] Wenn die öffentliche Unzufriedenheit wuchs, kam es zu Straßenprotesten.",
+    "[3] Für jedes Ereignis x gilt: Wenn x ein städtischer Protest war, setzte die Regierung Truppen gegen x ein.",
+    "[4] Wenn es zu Straßenprotesten kam und die Regierung Truppen gegen den Hauptstadtmarsch (a) einsetzte, verhängte die Regierung den Ausnahmezustand.",
+    "[5] Die Krone erhöhte die Steuern.",
+    "[6] Der Hauptstadtmarsch (a) war ein städtischer Protest.",
+    "[7] Daher kam es zu Straßenprotesten, und die Regierung setzte Truppen gegen den Hauptstadtmarsch (a) ein.",
+    "[8] Daher verhängte die Regierung den Ausnahmezustand."
+  ]
+}

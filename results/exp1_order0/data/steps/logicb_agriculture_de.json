@@ -1,0 +1,15 @@
+{
+  "label": "logicB:agriculture_de",
+  "logic": "logicB",
+  "topic": "agriculture_de",
+  "steps": [
+    "[1] Wenn das Feld gepflügt ist, dann ist der Boden gelockert.",
+    "[2] Wenn der Boden gelockert ist, dann ist das Saatbett geeignet.",
+    "[3] Für jede Saatpartie x gilt: Wenn x mit Fungizid gebeizt ist, dann ist x gegen saatgutübertragene Krankheiten geschützt.",
+    "[4] Wenn das Saatbett geeignet ist und die Saatpartie a gegen saatgutübertragene Krankheiten geschützt ist, dann etabliert sich der Bestand gut.",
+    "[5] Das Feld ist gepflügt.",
+    "[6] Die Saatpartie a ist mit Fungizid gebeizt.",
+    "[7] Das Saatbett ist geeignet und die Saatpartie a ist gegen saatgutübertragene Krankheiten geschützt.",
+    "[8] Der Bestand etabliert sich gut."
+  ]
+}

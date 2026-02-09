@@ -1,0 +1,15 @@
+{
+  "label": "logicB:history_en",
+  "logic": "logicB",
+  "topic": "history_en",
+  "steps": [
+    "[1] If the crown raised taxes, public unrest grew.",
+    "[2] If public unrest grew, street protests erupted.",
+    "[3] For every event x, if x was an urban protest, the government deployed troops against x.",
+    "[4] If street protests erupted and the government deployed troops against the capital march (a), the government imposed martial law.",
+    "[5] The crown raised taxes.",
+    "[6] The capital march (a) was an urban protest.",
+    "[7] Therefore, street protests erupted and the government deployed troops against the capital march (a).",
+    "[8] Therefore, the government imposed martial law."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "logicA:chemistry_de",
+  "logic": "logicA",
+  "topic": "chemistry_de",
+  "steps": [
+    "[1] Wenn ein primärer Alkohol unter diesen Bedingungen oxidiert wird, entsteht ein Aldehyd.",
+    "[2] Wenn ein Aldehyd mit Überschuss an Oxidationsmittel weiter oxidiert wird, entsteht eine Carbonsäure.",
+    "[3] Für jedes Teilchen x gilt: Ist x eine Lewis-Säure, dann akzeptiert x ein Elektronenpaar von einer Lewis-Base.",
+    "[4] Aluminiumchlorid (AlCl3) ist eine Lewis-Säure.",
+    "[5] Ein primärer Alkohol in der Probe wird diesen Oxidationsbedingungen ausgesetzt.",
+    "[6] Daher entsteht aus dem primären Alkohol ein Aldehyd (aus [1] und [5]).",
+    "[7] Daher entsteht aus diesem Aldehyd eine Carbonsäure (aus [2] und [6]).",
+    "[8] Daher akzeptiert AlCl3 ein Elektronenpaar von einer Lewis-Base (aus [3] und [4]).",
+    "[9] Folglich liegt eine Carbonsäure vor und AlCl3 akzeptiert ein Elektronenpaar (aus [7] und [8])."
+  ]
+}

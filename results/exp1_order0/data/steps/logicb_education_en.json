@@ -1,0 +1,15 @@
+{
+  "label": "logicB:education_en",
+  "logic": "logicB",
+  "topic": "education_en",
+  "steps": [
+    "[1] If a student completes the prerequisite course, then they meet the program requirement.",
+    "[2] If a student meets the program requirement, then they gain access to the advanced seminar.",
+    "[3] For every student x, if x submits a research proposal that meets the guidelines, then x’s proposal is approved.",
+    "[4] If Student A has access to the advanced seminar and Student A’s proposal is approved, then Student A can register for the capstone project.",
+    "[5] Student A completed the prerequisite course.",
+    "[6] Student A submitted a research proposal that meets the guidelines.",
+    "[7] Student A has access to the advanced seminar and Student A’s proposal is approved.",
+    "[8] Student A can register for the capstone project."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "label": "logicB:healthcare_en",
+  "logic": "logicB",
+  "topic": "healthcare_en",
+  "steps": [
+    "[1] If Patient A has high fever and an elevated white blood cell count, then an acute infection is likely.",
+    "[2] If an acute infection is likely, then a bacterial cause is suspected.",
+    "[3] For all patients x, if x reports a penicillin allergy, then x should avoid penicillin.",
+    "[4] If a bacterial cause is suspected and Patient A should avoid penicillin, then treat Patient A with a non-penicillin antibiotic.",
+    "[5] Patient A has high fever and an elevated white blood cell count.",
+    "[6] Patient A reports a penicillin allergy.",
+    "[7] A bacterial cause is suspected and Patient A should avoid penicillin.",
+    "[8] Treat Patient A with a non-penicillin antibiotic."
+  ]
+}

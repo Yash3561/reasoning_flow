@@ -1,0 +1,15 @@
+{
+  "label": "logicB:politics_de",
+  "logic": "logicB",
+  "topic": "politics_de",
+  "steps": [
+    "[1] Wenn die Partei eine Parlamentsmehrheit gewinnt, dann bildet sie die Regierung.",
+    "[2] Wenn die Partei die Regierung bildet, dann kontrolliert sie die Gesetzgebungsagenda.",
+    "[3] Für jede Kandidatin oder jeden Kandidaten x gilt: Wenn x vom Ethikkomitee geprüft ist, dann stuft die Partei x als vertrauenswürdig ein.",
+    "[4] Wenn die Partei die Gesetzgebungsagenda kontrolliert und Frau Lee als vertrauenswürdig gilt, dann wird die Partei Frau Lees Gesetzentwurf voranbringen.",
+    "[5] Die Partei gewinnt eine Parlamentsmehrheit.",
+    "[6] Frau Lee ist vom Ethikkomitee geprüft.",
+    "[7] Daher kontrolliert die Partei die Gesetzgebungsagenda, und Frau Lee gilt als vertrauenswürdig.",
+    "[8] Daher wird die Partei Frau Lees Gesetzentwurf voranbringen."
+  ]
+}

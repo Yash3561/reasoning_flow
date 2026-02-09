@@ -1,0 +1,16 @@
+{
+  "label": "logicA:law_en",
+  "logic": "logicA",
+  "topic": "law_en",
+  "steps": [
+    "[1] If the parties signed a nondisclosure agreement (NDA), then a contractual duty of confidentiality exists.",
+    "[2] If a contractual duty of confidentiality exists, then the plaintiff has a legal right to protection of its trade secrets.",
+    "[3] For every person x, if x is a licensed attorney, then x is bound by attorney-client confidentiality.",
+    "[4] Lee is a licensed attorney.",
+    "[5] The parties signed a nondisclosure agreement (NDA).",
+    "[6] A contractual duty of confidentiality exists (from [1] and [5]).",
+    "[7] The plaintiff has a legal right to protection of its trade secrets (from [2] and [6]).",
+    "[8] Lee is bound by attorney-client confidentiality (from [3] and [4]).",
+    "[9] The plaintiff has a legal right to protection of its trade secrets and Lee is bound by attorney-client confidentiality (from [7] and [8])."
+  ]
+}

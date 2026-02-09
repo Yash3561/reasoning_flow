@@ -1,0 +1,16 @@
+{
+  "label": "logicA:manufacturing_de",
+  "logic": "logicA",
+  "topic": "manufacturing_de",
+  "steps": [
+    "[1] Wenn die Konstruktionsfreigabe genehmigt ist, dann wird das CNC-Bearbeitungsprogramm erzeugt.",
+    "[2] Wenn das CNC-Bearbeitungsprogramm erzeugt wird, dann werden die CNC-Maschinen für die Produktion eingerichtet.",
+    "[3] Für jedes Bauteil x gilt: Wenn x wärmebehandelt ist, dann erfüllt x die Härtespezifikation.",
+    "[4] Die Zahnradwelle ist wärmebehandelt.",
+    "[5] Die Konstruktionsfreigabe ist genehmigt.",
+    "[6] Das CNC-Bearbeitungsprogramm wird erzeugt (aus [1] und [5]).",
+    "[7] Die CNC-Maschinen werden für die Produktion eingerichtet (aus [2] und [6]).",
+    "[8] Die Zahnradwelle erfüllt die Härtespezifikation (aus [3] und [4]).",
+    "[9] Die CNC-Maschinen sind für die Produktion eingerichtet und die Zahnradwelle erfüllt die Härtespezifikation (aus [7] und [8])."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label": "logicC:network_security_de",
+  "logic": "logicC",
+  "topic": "network_security_de",
+  "steps": [
+    "[1] Wenn eine eingehende Verbindung von einer auf der Blockliste stehenden IP stammt, markiert das IDS die Verbindung.",
+    "[2] Wenn das IDS die Verbindung markiert, eröffnet das SIEM einen Incident.",
+    "[3] Wenn das SIEM einen Incident eröffnet und Auto-Blocking aktiviert ist, blockiert die Firewall die Quell-IP automatisch.",
+    "[4] Auto-Blocking ist aktiviert.",
+    "[5] Eine eingehende Verbindung stammt von einer auf der Blockliste stehenden IP.",
+    "[6] Für alle Hosts x gilt: Wenn Host x kritische Sicherheitsupdates fehlen, wird Host x als nicht konform markiert.",
+    "[7] Host a fehlen kritische Sicherheitsupdates.",
+    "[8] Für alle Hosts x gilt: Wenn Host x als nicht konform markiert ist, wird Host x entweder in ein Remediationsnetz isoliert oder der Zugriff auf sensible Subnetze wird verweigert.",
+    "[9] Das IDS markiert die Verbindung.",
+    "[10] Das SIEM eröffnet einen Incident.",
+    "[11] Die Firewall blockiert die Quell-IP automatisch.",
+    "[12] Host a ist als nicht konform markiert und wird entweder in ein Remediationsnetz isoliert oder der Zugriff auf sensible Subnetze wird verweigert."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label": "logicC:software_en",
+  "logic": "logicC",
+  "topic": "software_en",
+  "steps": [
+    "[1] If the repository has a valid build configuration, then the CI server can run the build.",
+    "[2] If the CI server can run the build, then a build artifact is produced.",
+    "[3] If a build artifact is produced and deployment credentials are configured, then the application can be deployed to staging.",
+    "[4] Deployment credentials are configured.",
+    "[5] The repository has a valid build configuration.",
+    "[6] For every module x, if a linter is configured for x, then lint results are available for x.",
+    "[7] A linter is configured for module a.",
+    "[8] For every module x, if lint results are available for x, then either x passes linting or x fails linting.",
+    "[9] The CI server can run the build (from [1] and [5]).",
+    "[10] A build artifact is produced (from [2] and [9]).",
+    "[11] The application can be deployed to staging (from [3] and [10] and [4]).",
+    "[12] For module a, lint results are available and either it passes linting or it fails linting (from [6],[7],[8])."
+  ]
+}

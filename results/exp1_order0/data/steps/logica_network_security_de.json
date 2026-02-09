@@ -1,0 +1,16 @@
+{
+  "label": "logicA:network_security_de",
+  "logic": "logicA",
+  "topic": "network_security_de",
+  "steps": [
+    "[1] Wenn ein Host wiederholt Verbindungen zu einer bekannten Kommando-und-Kontroll-(C2)-Domain herstellt, wird der Host als kompromittiert eingestuft.",
+    "[2] Wenn ein Host als kompromittiert eingestuft ist, wird der Host vom Netzwerk isoliert.",
+    "[3] Für jedes Asset x gilt: Wenn x der kritische Sicherheitspatch KB-5021234 fehlt, dann ist x anfällig für Remote-Code-Ausführung.",
+    "[4] Auf Workstation W-17 fehlt der kritische Sicherheitspatch KB-5021234.",
+    "[5] Workstation W-17 hat wiederholt Verbindungen zu einer bekannten C2-Domain hergestellt.",
+    "[6] Workstation W-17 wird als kompromittiert eingestuft (aus [1] und [5]).",
+    "[7] Workstation W-17 wird vom Netzwerk isoliert (aus [2] und [6]).",
+    "[8] Workstation W-17 ist anfällig für Remote-Code-Ausführung (aus [3] und [4]).",
+    "[9] Workstation W-17 ist vom Netzwerk isoliert und anfällig für Remote-Code-Ausführung (aus [7] und [8])."
+  ]
+}

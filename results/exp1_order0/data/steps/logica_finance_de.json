@@ -1,0 +1,16 @@
+{
+  "label": "logicA:finance_de",
+  "logic": "logicA",
+  "topic": "finance_de",
+  "steps": [
+    "[1] Wenn die Zinsdeckungskennzahl des Unternehmens über 3,0x liegt, dann gilt das Unternehmen als fähig, Zinszahlungen zu leisten.",
+    "[2] Wenn das Unternehmen als fähig gilt, Zinszahlungen zu leisten, dann wird die Bank ein neues Laufzeitdarlehen genehmigen.",
+    "[3] Für jedes Wertpapier x gilt: Wenn x eine US-Staatsanleihe ist, dann ist x als Repo-Sicherheit zulässig.",
+    "[4] Anleihe A ist eine US-Staatsanleihe.",
+    "[5] Die Zinsdeckungskennzahl des Unternehmens liegt über 3,0x.",
+    "[6] Daher gilt das Unternehmen als fähig, Zinszahlungen zu leisten (aus [1] und [5]).",
+    "[7] Daher wird die Bank ein neues Laufzeitdarlehen genehmigen (aus [2] und [6]).",
+    "[8] Daher ist Anleihe A als Repo-Sicherheit zulässig (aus [3] und [4]).",
+    "[9] Somit wird die Bank ein neues Laufzeitdarlehen genehmigen und Anleihe A ist als Repo-Sicherheit zulässig (aus [7] und [8])."
+  ]
+}

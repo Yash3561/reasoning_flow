@@ -1,0 +1,16 @@
+{
+  "label": "logicA:manufacturing_en",
+  "logic": "logicA",
+  "topic": "manufacturing_en",
+  "steps": [
+    "[1] If the design release is approved, then the CNC machining program is generated.",
+    "[2] If the CNC machining program is generated, then the CNC machines are set up for production.",
+    "[3] For every component x, if x is heat-treated, then x meets the hardness specification.",
+    "[4] The gear shaft is heat-treated.",
+    "[5] The design release is approved.",
+    "[6] The CNC machining program is generated (from [1] and [5]).",
+    "[7] The CNC machines are set up for production (from [2] and [6]).",
+    "[8] The gear shaft meets the hardness specification (from [3] and [4]).",
+    "[9] The CNC machines are set up for production and the gear shaft meets the hardness specification (from [7] and [8])."
+  ]
+}

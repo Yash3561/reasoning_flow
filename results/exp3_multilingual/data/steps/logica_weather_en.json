@@ -1,0 +1,16 @@
+{
+  "label": "logicA:weather_en",
+  "logic": "logicA",
+  "topic": "weather_en",
+  "steps": [
+    "[1] If moisture converges over the city, then thunderclouds develop.",
+    "[2] If thunderclouds develop, then heavy rain occurs.",
+    "[3] For any location x, if a cold front passes x, then temperatures drop at x.",
+    "[4] A cold front is passing the airport.",
+    "[5] Moisture is converging over the city.",
+    "[6] From [1] and [5], thunderclouds develop.",
+    "[7] From [2] and [6], heavy rain occurs.",
+    "[8] From [3] and [4], temperatures drop at the airport.",
+    "[9] From [7] and [8], heavy rain occurs and temperatures drop at the airport."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "label": "logicB:law_en",
+  "logic": "logicB",
+  "topic": "law_en",
+  "steps": [
+    "[1] If both parties signed the contract, then the contract is valid.",
+    "[2] If the contract is valid, then the contract is enforceable.",
+    "[3] For any person x, if x is a party to the contract, then x has standing to enforce it.",
+    "[4] If the contract is enforceable and Alice has standing, then the court grants judgment for Alice.",
+    "[5] Both parties signed the contract.",
+    "[6] Alice is a party to the contract.",
+    "[7] Therefore, the contract is enforceable and Alice has standing.",
+    "[8] Therefore, the court grants judgment for Alice."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label": "logicC:sports_de",
+  "logic": "logicC",
+  "topic": "sports_de",
+  "steps": [
+    "[1] Wenn das Team das Divisionsfinale gewinnt, qualifiziert es sich für das Konferenzfinale.",
+    "[2] Wenn sich ein Team für das Konferenzfinale qualifiziert, ist es für das Ligafinale spielberechtigt.",
+    "[3] Wenn das Team für das Ligafinale spielberechtigt ist und die Liga die Spielstätte freigegeben hat, wird das Ligafinale für das Team angesetzt.",
+    "[4] Die Liga hat die Spielstätte freigegeben.",
+    "[5] Das Team hat das Divisionsfinale gewonnen.",
+    "[6] Für alle Spieler gilt: Wer die Trainingsbelastungs-Benchmark erfüllt, erhält die Freigabe für den Spielkader.",
+    "[7] Jordan hat die Trainingsbelastungs-Benchmark erfüllt.",
+    "[8] Für alle Spieler gilt: Wer die Freigabe für den Spielkader hat, steht entweder in der Startelf oder auf der Bank.",
+    "[9] Daher qualifiziert sich das Team für das Konferenzfinale.",
+    "[10] Daher ist das Team für das Ligafinale spielberechtigt.",
+    "[11] Daher wird das Ligafinale für das Team angesetzt.",
+    "[12] Daher hat Jordan die Freigabe für den Spielkader und steht entweder in der Startelf oder auf der Bank."
+  ]
+}

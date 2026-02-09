@@ -1,0 +1,19 @@
+{
+  "label": "logicC:marketing_de",
+  "logic": "logicC",
+  "topic": "marketing_de",
+  "steps": [
+    "[1] Wenn wir eine Social-Media-Kampagne starten, dann erzeugen wir Website-Traffic.",
+    "[2] Wenn wir Website-Traffic erzeugen, dann gewinnen wir qualifizierte Leads.",
+    "[3] Wenn sowohl qualifizierte Leads als auch eine vorbereitete Nurturing-E-Mail-Sequenz vorliegen, dann konvertieren wir Leads zu Kunden.",
+    "[4] Wir haben eine Nurturing-E-Mail-Sequenz vorbereitet.",
+    "[5] Wir starten eine Social-Media-Kampagne.",
+    "[6] Für jede Interessentin bzw. jeden Interessenten x gilt: Wenn x unserem Ideal-Customer-Profile entspricht, dann ist x für zielgerichtete Ansprache qualifiziert.",
+    "[7] Interessent a entspricht unserem Ideal-Customer-Profile.",
+    "[8] Für jede Interessentin bzw. jeden Interessenten x gilt: Wenn x für zielgerichtete Ansprache qualifiziert ist, dann bucht x entweder eine Demo oder startet eine kostenlose Testphase.",
+    "[9] Wir erzeugen Website-Traffic. (aus [1] und [5])",
+    "[10] Wir gewinnen qualifizierte Leads. (aus [2] und [9])",
+    "[11] Wir konvertieren die Leads zu Kunden. (aus [3] und [10] und [4])",
+    "[12] Interessent a ist für zielgerichtete Ansprache qualifiziert und bucht entweder eine Demo oder startet eine kostenlose Testphase. (aus [6], [7], [8])"
+  ]
+}

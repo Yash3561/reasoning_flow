@@ -1,0 +1,31 @@
+{
+  "pooling": "step_mean",
+  "accumulation": "cumulative",
+  "context_aware_k": 16,
+  "similarity_order": 1,
+  "sections": "logicA,logicB,logicC",
+  "hf_model": "Qwen/Qwen2.5-0.5B",
+  "device": "cpu",
+  "labels": [
+    "logicA:abstract",
+    "logicA:weather_en",
+    "logicA:weather_zh",
+    "logicA:weather_de",
+    "logicA:weather_ja",
+    "logicB:abstract",
+    "logicB:weather_en",
+    "logicB:weather_zh",
+    "logicB:weather_de",
+    "logicB:weather_ja",
+    "logicC:abstract",
+    "logicC:weather_en",
+    "logicC:weather_zh",
+    "logicC:weather_de",
+    "logicC:weather_ja"
+  ],
+  "load_in_8bit": false,
+  "load_in_4bit": false,
+  "device_map": "auto",
+  "dtype": "auto",
+  "attn_implementation": null
+}

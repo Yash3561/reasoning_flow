@@ -1,0 +1,19 @@
+{
+  "label": "logicC:transport_en",
+  "logic": "logicC",
+  "topic": "transport_en",
+  "steps": [
+    "[1] If an accident blocks Highway 7, then traffic is diverted off Highway 7.",
+    "[2] If traffic is diverted off Highway 7, then vehicles take the signed detour.",
+    "[3] If vehicles take the signed detour and the detour is open, then vehicles reach their destination.",
+    "[4] The detour is open.",
+    "[5] An accident blocks Highway 7.",
+    "[6] For every vehicle x, if x is scheduled for maintenance, then x requires an inspection.",
+    "[7] Bus A12 is scheduled for maintenance.",
+    "[8] For every vehicle x, if x requires an inspection, then x either passes inspection or is taken out of service.",
+    "[9] Traffic is diverted off Highway 7. (from [1] and [5])",
+    "[10] Vehicles take the signed detour. (from [2] and [9])",
+    "[11] Vehicles reach their destination. (from [3] and [10] and [4])",
+    "[12] Bus A12 requires an inspection, and it either passes inspection or is taken out of service. (from [6],[7],[8])"
+  ]
+}

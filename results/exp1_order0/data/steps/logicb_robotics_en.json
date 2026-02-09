@@ -1,0 +1,15 @@
+{
+  "label": "logicB:robotics_en",
+  "logic": "logicB",
+  "topic": "robotics_en",
+  "steps": [
+    "[1] If the main power is on, the motor drives are enabled.",
+    "[2] If the motor drives are enabled, the robot can move.",
+    "[3] For every actuator x, if x is homed, then x has a known pose.",
+    "[4] If the robot can move and arm_1 has a known pose, then the planned motion can be executed.",
+    "[5] The main power is on.",
+    "[6] arm_1 is homed.",
+    "[7] The robot can move and arm_1 has a known pose (from [1–3],[5],[6]).",
+    "[8] The planned motion can be executed (from [4] and [7])."
+  ]
+}

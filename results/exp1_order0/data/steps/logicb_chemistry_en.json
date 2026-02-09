@@ -1,0 +1,15 @@
+{
+  "label": "logicB:chemistry_en",
+  "logic": "logicB",
+  "topic": "chemistry_en",
+  "steps": [
+    "[1] If zinc is above hydrogen in the activity series, then zinc displaces hydrogen from hydrochloric acid.",
+    "[2] If zinc displaces hydrogen from hydrochloric acid, then hydrogen gas evolves.",
+    "[3] For any acid x, if x is strong, then x fully ionizes in water.",
+    "[4] If hydrogen gas evolves and hydrochloric acid fully ionizes in water, then the net ionic equation is Zn + 2H+ → Zn2+ + H2.",
+    "[5] Zinc is above hydrogen in the activity series.",
+    "[6] Hydrochloric acid is a strong acid.",
+    "[7] Hydrogen gas evolves and hydrochloric acid fully ionizes in water. (from [1–3],[5],[6])",
+    "[8] Therefore, the net ionic equation is Zn + 2H+ → Zn2+ + H2. (from [4] and [7])"
+  ]
+}

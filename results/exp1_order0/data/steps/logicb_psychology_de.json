@@ -1,0 +1,15 @@
+{
+  "label": "logicB:psychology_de",
+  "logic": "logicB",
+  "topic": "psychology_de",
+  "steps": [
+    "[1] Wenn eine Person unter chronischem Schlafmangel leidet, zeigt sie typischerweise erhöhte Stressmarker.",
+    "[2] Wenn eine Person erhöhte Stressmarker zeigt, entwickelt sie typischerweise Konzentrationsschwierigkeiten.",
+    "[3] Für jede Person x gilt: Wenn x Achtsamkeit praktiziert, zeigt x reduziertes Grübeln.",
+    "[4] Wenn Jordan Konzentrationsschwierigkeiten und reduziertes Grübeln hat, sollte Jordans Behandlung die Wiederherstellung des Schlafs priorisieren.",
+    "[5] Jordan leidet unter chronischem Schlafmangel.",
+    "[6] Jordan praktiziert täglich Achtsamkeit.",
+    "[7] Aus [1–3], [5] und [6] folgt, dass Jordan Konzentrationsschwierigkeiten und reduziertes Grübeln hat.",
+    "[8] Aus [4] und [7] folgt, dass Jordans Behandlung die Wiederherstellung des Schlafs priorisieren sollte."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label": "logicC:software_de",
+  "logic": "logicC",
+  "topic": "software_de",
+  "steps": [
+    "[1] Wenn das Repository eine gültige Build-Konfiguration hat, dann kann der CI-Server den Build ausführen.",
+    "[2] Wenn der CI-Server den Build ausführen kann, dann wird ein Build-Artefakt erzeugt.",
+    "[3] Wenn ein Build-Artefakt erzeugt wurde und Bereitstellungszugangsdaten konfiguriert sind, dann kann die Anwendung ins Staging bereitgestellt werden.",
+    "[4] Bereitstellungszugangsdaten sind konfiguriert.",
+    "[5] Das Repository hat eine gültige Build-Konfiguration.",
+    "[6] Für jedes Modul x gilt: Wenn für x ein Linter konfiguriert ist, dann sind für x Linting-Ergebnisse verfügbar.",
+    "[7] Für Modul a ist ein Linter konfiguriert.",
+    "[8] Für jedes Modul x gilt: Wenn für x Linting-Ergebnisse verfügbar sind, dann besteht x entweder das Linting oder x fällt durch.",
+    "[9] Der CI-Server kann den Build ausführen (aus [1] und [5]).",
+    "[10] Ein Build-Artefakt wird erzeugt (aus [2] und [9]).",
+    "[11] Die Anwendung kann ins Staging bereitgestellt werden (aus [3] und [10] und [4]).",
+    "[12] Für Modul a sind Linting-Ergebnisse verfügbar und entweder besteht es das Linting oder es fällt durch (aus [6],[7],[8])."
+  ]
+}

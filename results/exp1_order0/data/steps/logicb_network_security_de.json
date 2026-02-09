@@ -1,0 +1,15 @@
+{
+  "label": "logicB:network_security_de",
+  "logic": "logicB",
+  "topic": "network_security_de",
+  "steps": [
+    "[1] Wenn die Default-Deny-Regel der Firewall aktiviert ist, dann werden unbeabsichtigt eingehende Pakete blockiert.",
+    "[2] Wenn unbeabsichtigt eingehende Pakete blockiert werden, dann können externe Hosts keine Verbindungen zu internen Diensten initiieren.",
+    "[3] Für jeden Host x gilt: Wenn x den Patch für CVE-2023-12345 hat, dann ist x nicht verwundbar gegenüber CVE-2023-12345.",
+    "[4] Wenn externe Hosts keine Verbindungen zu internen Diensten initiieren können und der Datenbankserver nicht verwundbar gegenüber CVE-2023-12345 ist, dann kann der Datenbankserver nicht über das Internet via dieser CVE kompromittiert werden.",
+    "[5] Die Default-Deny-Regel der Firewall ist aktiviert.",
+    "[6] Der Datenbankserver hat den Patch für CVE-2023-12345.",
+    "[7] Daher können externe Hosts keine Verbindungen zu internen Diensten initiieren und der Datenbankserver ist nicht verwundbar gegenüber CVE-2023-12345. (aus [1–3], [5], [6])",
+    "[8] Daher kann der Datenbankserver nicht über das Internet über CVE-2023-12345 kompromittiert werden. (aus [4] und [7])"
+  ]
+}

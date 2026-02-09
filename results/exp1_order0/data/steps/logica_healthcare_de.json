@@ -1,0 +1,16 @@
+{
+  "label": "logicA:healthcare_de",
+  "logic": "logicA",
+  "topic": "healthcare_de",
+  "steps": [
+    "[1] Wenn ein Patient die Sepsiskriterien erfüllt, werden Breitbandantibiotika in Erwägung gezogen.",
+    "[2] Wenn für einen Patienten Breitbandantibiotika in Erwägung gezogen werden, werden Blutkulturen vor der ersten Dosis abgenommen.",
+    "[3] Für jeden Patienten x gilt: Wenn x eine dokumentierte schwere Penicillinallergie hat, muss x Penicillin vermeiden.",
+    "[4] Patient a hat eine dokumentierte schwere Penicillinallergie.",
+    "[5] Patient a erfüllt die Sepsiskriterien.",
+    "[6] Daher werden für Patient a Breitbandantibiotika in Erwägung gezogen.",
+    "[7] Daher werden bei Patient a Blutkulturen vor der ersten Antibiotikadosis abgenommen.",
+    "[8] Daher muss Patient a Penicillin vermeiden.",
+    "[9] Bei Patient a sind Blutkulturen abgenommen, und Patient a muss Penicillin vermeiden."
+  ]
+}

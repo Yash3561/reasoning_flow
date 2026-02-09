@@ -1,0 +1,16 @@
+{
+  "label": "logicA:sports_en",
+  "logic": "logicA",
+  "topic": "sports_en",
+  "steps": [
+    "[1] If the team wins the semifinal, then the team qualifies for the final.",
+    "[2] If the team qualifies for the final, then the team plays for the championship.",
+    "[3] For every athlete, if the athlete passes the anti-doping test, then the athlete is eligible to compete.",
+    "[4] Athlete A passed the anti-doping test.",
+    "[5] The team won the semifinal.",
+    "[6] The team qualified for the final.",
+    "[7] The team plays for the championship.",
+    "[8] Athlete A is eligible to compete.",
+    "[9] The team plays for the championship and Athlete A is eligible to compete."
+  ]
+}

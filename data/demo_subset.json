@@ -1,0 +1,237 @@
+{
+  "logicA": [
+    {
+      "steps": [
+        "[1] A\u2192B",
+        "[2] B\u2192C",
+        "[3] \u2200x(H(x)\u2192J(x))",
+        "[4] H(a)",
+        "[5] A",
+        "[6] B (from [1] and [5])",
+        "[7] C (from [2] and [6])",
+        "[8] J(a) (from [3] and [4])",
+        "[9] C \u2227 J(a) (from [7] and [8])"
+      ]
+    },
+    {
+      "topic": "weather_en",
+      "lang": "en",
+      "steps": [
+        "[1] If moisture converges over the city, then thunderclouds develop.",
+        "[2] If thunderclouds develop, then heavy rain occurs.",
+        "[3] For any location x, if a cold front passes x, then temperatures drop at x.",
+        "[4] A cold front is passing the airport.",
+        "[5] Moisture is converging over the city.",
+        "[6] From [1] and [5], thunderclouds develop.",
+        "[7] From [2] and [6], heavy rain occurs.",
+        "[8] From [3] and [4], temperatures drop at the airport.",
+        "[9] From [7] and [8], heavy rain occurs and temperatures drop at the airport."
+      ]
+    },
+    {
+      "topic": "weather_zh",
+      "lang": "zh",
+      "steps": [
+        "[1] \u5982\u679c\u57ce\u5e02\u4e0a\u7a7a\u51fa\u73b0\u6c34\u6c7d\u8f90\u5408\uff0c\u90a3\u4e48\u4f1a\u751f\u6210\u79ef\u96e8\u4e91\u3002",
+        "[2] \u5982\u679c\u751f\u6210\u79ef\u96e8\u4e91\uff0c\u90a3\u4e48\u4f1a\u4e0b\u5927\u96e8\u3002",
+        "[3] \u5bf9\u4efb\u4f55\u5730\u70b9x\uff0c\u5982\u679c\u51b7\u950b\u7ecf\u8fc7x\uff0c\u90a3\u4e48x\u7684\u6c14\u6e29\u4f1a\u4e0b\u964d\u3002",
+        "[4] \u51b7\u950b\u6b63\u5728\u7ecf\u8fc7\u673a\u573a\u3002",
+        "[5] \u57ce\u5e02\u4e0a\u7a7a\u51fa\u73b0\u6c34\u6c7d\u8f90\u5408\u3002",
+        "[6] \u7531[1]\u548c[5]\u53ef\u5f97\uff0c\u751f\u6210\u79ef\u96e8\u4e91\u3002",
+        "[7] \u7531[2]\u548c[6]\u53ef\u5f97\uff0c\u4f1a\u4e0b\u5927\u96e8\u3002",
+        "[8] \u7531[3]\u548c[4]\u53ef\u5f97\uff0c\u673a\u573a\u6c14\u6e29\u4f1a\u4e0b\u964d\u3002",
+        "[9] \u7531[7]\u548c[8]\u53ef\u5f97\uff0c\u4f1a\u4e0b\u5927\u96e8\u4e14\u673a\u573a\u6c14\u6e29\u4f1a\u4e0b\u964d\u3002"
+      ]
+    },
+    {
+      "topic": "weather_de",
+      "lang": "de",
+      "steps": [
+        "[1] Wenn \u00fcber der Stadt Feuchte konvergiert, dann bilden sich Gewitterwolken.",
+        "[2] Wenn sich Gewitterwolken bilden, dann tritt starker Regen auf.",
+        "[3] F\u00fcr jeden Ort x gilt: Wenn eine Kaltfront x \u00fcberquert, dann sinkt dort die Temperatur.",
+        "[4] Eine Kaltfront \u00fcberquert den Flughafen.",
+        "[5] \u00dcber der Stadt herrscht Feuchtekonvergenz.",
+        "[6] Aus [1] und [5] folgt, dass sich Gewitterwolken bilden.",
+        "[7] Aus [2] und [6] folgt, dass starker Regen auftritt.",
+        "[8] Aus [3] und [4] folgt, dass am Flughafen die Temperatur sinkt.",
+        "[9] Aus [7] und [8] folgt: Es tritt starker Regen auf und am Flughafen sinkt die Temperatur."
+      ]
+    },
+    {
+      "topic": "weather_ja",
+      "lang": "ja",
+      "steps": [
+        "[1] \u90fd\u5e02\u4e0a\u7a7a\u3067\u6c34\u84b8\u6c17\u304c\u53ce\u675f\u3059\u308c\u3070\u3001\u7a4d\u4e71\u96f2\u304c\u767a\u9054\u3059\u308b\u3002",
+        "[2] \u7a4d\u4e71\u96f2\u304c\u767a\u9054\u3059\u308c\u3070\u3001\u5927\u96e8\u306b\u306a\u308b\u3002",
+        "[3] \u4efb\u610f\u306e\u5730\u70b9x\u306b\u3064\u3044\u3066\u3001\u5bd2\u51b7\u524d\u7dda\u304cx\u3092\u901a\u904e\u3059\u308c\u3070\u3001x\u3067\u6c17\u6e29\u304c\u4e0b\u304c\u308b\u3002",
+        "[4] \u5bd2\u51b7\u524d\u7dda\u304c\u7a7a\u6e2f\u3092\u901a\u904e\u3057\u3066\u3044\u308b\u3002",
+        "[5] \u90fd\u5e02\u4e0a\u7a7a\u3067\u6c34\u84b8\u6c17\u304c\u53ce\u675f\u3057\u3066\u3044\u308b\u3002",
+        "[6] [1]\u3068[5]\u3088\u308a\u3001\u7a4d\u4e71\u96f2\u304c\u767a\u9054\u3059\u308b\u3002",
+        "[7] [2]\u3068[6]\u3088\u308a\u3001\u5927\u96e8\u306b\u306a\u308b\u3002",
+        "[8] [3]\u3068[4]\u3088\u308a\u3001\u7a7a\u6e2f\u3067\u6c17\u6e29\u304c\u4e0b\u304c\u308b\u3002",
+        "[9] [7]\u3068[8]\u3088\u308a\u3001\u5927\u96e8\u306b\u306a\u308a\u7a7a\u6e2f\u3067\u6c17\u6e29\u304c\u4e0b\u304c\u308b\u3002"
+      ]
+    }
+  ],
+  "logicB": [
+    {
+      "steps": [
+        "[1] A\u2192B",
+        "[2] B\u2192C",
+        "[3] \u2200x(P(x)\u2192Q(x))",
+        "[4] (C \u2227 Q(a))\u2192D",
+        "[5] A",
+        "[6] P(a)",
+        "[7] C \u2227 Q(a)  (from [1\u20133],[5],[6])",
+        "[8] D  (from [4] and [7])"
+      ]
+    },
+    {
+      "topic": "weather_en",
+      "lang": "en",
+      "steps": [
+        "[1] If a strong onshore wind develops, then moist marine air moves inland.",
+        "[2] If moist marine air moves inland, then cloud cover thickens.",
+        "[3] For any site x, if a sea-breeze front reaches x, then x reports rising humidity.",
+        "[4] If cloud cover thickens and Harbor Point reports rising humidity, then rain is likely soon.",
+        "[5] A strong onshore wind develops.",
+        "[6] A sea-breeze front reaches Harbor Point.",
+        "[7] Cloud cover thickens and Harbor Point reports rising humidity. (from [1\u20133], [5], [6])",
+        "[8] Therefore, rain is likely soon. (from [4] and [7])"
+      ]
+    },
+    {
+      "topic": "weather_zh",
+      "lang": "zh",
+      "steps": [
+        "[1] \u5982\u679c\u5f3a\u52b2\u7684\u6d77\u98ce\u5f62\u6210\uff0c\u5219\u6f6e\u6e7f\u7684\u6d77\u6d0b\u7a7a\u6c14\u4f1a\u5411\u5185\u9646\u8f93\u9001\u3002",
+        "[2] \u5982\u679c\u6f6e\u6e7f\u7684\u6d77\u6d0b\u7a7a\u6c14\u5411\u5185\u9646\u8f93\u9001\uff0c\u5219\u4e91\u5c42\u4f1a\u589e\u539a\u3002",
+        "[3] \u5bf9\u4efb\u610f\u7ad9\u70b9x\uff0c\u5982\u679c\u6d77\u98ce\u950b\u5230\u8fbex\uff0c\u5219x\u4f1a\u62a5\u544a\u6e7f\u5ea6\u4e0a\u5347\u3002",
+        "[4] \u5982\u679c\u4e91\u5c42\u589e\u539a\u4e14Harbor Point\u62a5\u544a\u6e7f\u5ea6\u4e0a\u5347\uff0c\u5219\u5f88\u5feb\u53ef\u80fd\u4e0b\u96e8\u3002",
+        "[5] \u5f3a\u52b2\u7684\u6d77\u98ce\u5f62\u6210\u3002",
+        "[6] \u6d77\u98ce\u950b\u5230\u8fbeHarbor Point\u3002",
+        "[7] \u4e91\u5c42\u589e\u539a\u4e14Harbor Point\u62a5\u544a\u6e7f\u5ea6\u4e0a\u5347\u3002\uff08\u7531[1\u20133]\u3001[5]\u3001[6]\u5f97\uff09",
+        "[8] \u56e0\u6b64\uff0c\u5f88\u5feb\u53ef\u80fd\u4e0b\u96e8\u3002\uff08\u7531[4]\u4e0e[7]\u5f97\uff09"
+      ]
+    },
+    {
+      "topic": "weather_de",
+      "lang": "de",
+      "steps": [
+        "[1] Wenn sich ein starker auflandiger Wind entwickelt, dann dringt feuchte Meeresluft ins Landesinnere vor.",
+        "[2] Wenn feuchte Meeresluft ins Landesinnere vordringt, dann verdichtet sich die Bew\u00f6lkung.",
+        "[3] F\u00fcr jede Station x gilt: Wenn eine Seewindfront x erreicht, dann meldet x steigende Luftfeuchtigkeit.",
+        "[4] Wenn sich die Bew\u00f6lkung verdichtet und Harbor Point steigende Luftfeuchtigkeit meldet, dann ist in K\u00fcrze Regen wahrscheinlich.",
+        "[5] Ein starker auflandiger Wind entwickelt sich.",
+        "[6] Eine Seewindfront erreicht Harbor Point.",
+        "[7] Die Bew\u00f6lkung verdichtet sich und Harbor Point meldet steigende Luftfeuchtigkeit. (aus [1\u20133], [5], [6])",
+        "[8] Daher ist in K\u00fcrze Regen wahrscheinlich. (aus [4] und [7])"
+      ]
+    },
+    {
+      "topic": "weather_ja",
+      "lang": "ja",
+      "steps": [
+        "[1] \u5f37\u3044\u6d77\u98a8\u304c\u767a\u751f\u3059\u308c\u3070\u3001\u6e7f\u3063\u305f\u6d77\u6d0b\u7a7a\u6c17\u304c\u5185\u9678\u306b\u6d41\u5165\u3059\u308b\u3002",
+        "[2] \u6e7f\u3063\u305f\u6d77\u6d0b\u7a7a\u6c17\u304c\u5185\u9678\u306b\u6d41\u5165\u3059\u308c\u3070\u3001\u96f2\u304c\u539a\u304f\u306a\u308b\u3002",
+        "[3] \u4efb\u610f\u306e\u5730\u70b9x\u306b\u3064\u3044\u3066\u3001\u6d77\u98a8\u524d\u7dda\u304cx\u306b\u5230\u9054\u3059\u308c\u3070\u3001x\u306f\u6e7f\u5ea6\u4e0a\u6607\u3092\u5831\u544a\u3059\u308b\u3002",
+        "[4] \u96f2\u304c\u539a\u304f\u306a\u308a\u3001Harbor Point\u304c\u6e7f\u5ea6\u4e0a\u6607\u3092\u5831\u544a\u3059\u308b\u306a\u3089\u3001\u307e\u3082\u306a\u304f\u96e8\u306e\u53ef\u80fd\u6027\u304c\u9ad8\u3044\u3002",
+        "[5] \u5f37\u3044\u6d77\u98a8\u304c\u767a\u751f\u3059\u308b\u3002",
+        "[6] \u6d77\u98a8\u524d\u7dda\u304cHarbor Point\u306b\u5230\u9054\u3059\u308b\u3002",
+        "[7] \u96f2\u304c\u539a\u304f\u306a\u308a\u3001Harbor Point\u304c\u6e7f\u5ea6\u4e0a\u6607\u3092\u5831\u544a\u3059\u308b\u3002\uff08[1\u20133]\u3068[5]\u304a\u3088\u3073[6]\u3088\u308a\uff09",
+        "[8] \u3057\u305f\u304c\u3063\u3066\u3001\u307e\u3082\u306a\u304f\u96e8\u306e\u53ef\u80fd\u6027\u304c\u9ad8\u3044\u3002\uff08[4]\u3068[7]\u3088\u308a\uff09"
+      ]
+    }
+  ],
+  "logicC": [
+    {
+      "steps": [
+        "[1] A\u2192B",
+        "[2] B\u2192C",
+        "[3] (C \u2227 D)\u2192E",
+        "[4] D",
+        "[5] A",
+        "[6] \u2200x(H(x)\u2192J(x))",
+        "[7] H(a)",
+        "[8] \u2200x(J(x)\u2192(K(x) \u2228 L(x)))",
+        "[9] B  (from [1] and [5])",
+        "[10] C  (from [2] and [9])",
+        "[11] E  (from [3] and [10] and [4])",
+        "[12] J(a) \u2227 (K(a) \u2228 L(a))  (from [6],[7],[8])"
+      ]
+    },
+    {
+      "topic": "weather_en",
+      "lang": "en",
+      "steps": [
+        "[1] If a frontal system approaches the region, cloud cover increases.",
+        "[2] If cloud cover increases, precipitation becomes likely.",
+        "[3] If precipitation is likely and temperatures are below freezing, snowfall is expected.",
+        "[4] Temperatures are below freezing.",
+        "[5] A frontal system is approaching the region.",
+        "[6] For any city x, if x is coastal, then x has high humidity.",
+        "[7] Lisbon is a coastal city.",
+        "[8] For any city x, if x has high humidity, then x gets either morning fog or afternoon showers.",
+        "[9] Therefore, cloud cover increases.",
+        "[10] Therefore, precipitation becomes likely.",
+        "[11] Therefore, snowfall is expected.",
+        "[12] Lisbon has high humidity and will see either morning fog or afternoon showers."
+      ]
+    },
+    {
+      "topic": "weather_zh",
+      "lang": "zh",
+      "steps": [
+        "[1] \u82e5\u6709\u950b\u9762\u63a5\u8fd1\u672c\u5730\u533a\uff0c\u4e91\u91cf\u589e\u52a0\u3002",
+        "[2] \u82e5\u4e91\u91cf\u589e\u52a0\uff0c\u964d\u6c34\u53d8\u5f97\u53ef\u80fd\u3002",
+        "[3] \u82e5\u964d\u6c34\u53ef\u80fd\u4e14\u6c14\u6e29\u4f4e\u4e8e\u51b0\u70b9\uff0c\u5219\u9884\u8ba1\u4f1a\u4e0b\u96ea\u3002",
+        "[4] \u6c14\u6e29\u4f4e\u4e8e\u51b0\u70b9\u3002",
+        "[5] \u4e00\u80a1\u950b\u9762\u6b63\u5728\u63a5\u8fd1\u672c\u5730\u533a\u3002",
+        "[6] \u5bf9\u4efb\u610f\u57ce\u5e02x\uff0c\u82e5x\u662f\u6cbf\u6d77\u57ce\u5e02\uff0c\u5219x\u6e7f\u5ea6\u9ad8\u3002",
+        "[7] \u91cc\u65af\u672c\u662f\u6cbf\u6d77\u57ce\u5e02\u3002",
+        "[8] \u5bf9\u4efb\u610f\u57ce\u5e02x\uff0c\u82e5x\u6e7f\u5ea6\u9ad8\uff0c\u5219x\u4f1a\u51fa\u73b0\u6668\u96fe\u6216\u5348\u540e\u9635\u96e8\u4e2d\u7684\u4e00\u79cd\u3002",
+        "[9] \u56e0\u6b64\uff0c\u4e91\u91cf\u589e\u52a0\u3002",
+        "[10] \u56e0\u6b64\uff0c\u964d\u6c34\u53d8\u5f97\u53ef\u80fd\u3002",
+        "[11] \u56e0\u6b64\uff0c\u9884\u8ba1\u4f1a\u4e0b\u96ea\u3002",
+        "[12] \u91cc\u65af\u672c\u6e7f\u5ea6\u9ad8\uff0c\u5e76\u4e14\u5c06\u51fa\u73b0\u6668\u96fe\u6216\u5348\u540e\u9635\u96e8\u4e2d\u7684\u4e00\u79cd\u3002"
+      ]
+    },
+    {
+      "topic": "weather_de",
+      "lang": "de",
+      "steps": [
+        "[1] Wenn sich ein Frontsystem der Region n\u00e4hert, nimmt die Bew\u00f6lkung zu.",
+        "[2] Wenn die Bew\u00f6lkung zunimmt, wird Niederschlag wahrscheinlich.",
+        "[3] Wenn Niederschlag wahrscheinlich ist und die Temperaturen unter dem Gefrierpunkt liegen, ist Schneefall zu erwarten.",
+        "[4] Die Temperaturen liegen unter dem Gefrierpunkt.",
+        "[5] Ein Frontsystem n\u00e4hert sich der Region.",
+        "[6] F\u00fcr jede Stadt x gilt: Wenn x eine K\u00fcstenstadt ist, hat x eine hohe Luftfeuchtigkeit.",
+        "[7] Lissabon ist eine K\u00fcstenstadt.",
+        "[8] F\u00fcr jede Stadt x gilt: Wenn x eine hohe Luftfeuchtigkeit hat, bekommt x entweder Morgennebel oder Nachmittagschauer.",
+        "[9] Daher nimmt die Bew\u00f6lkung zu.",
+        "[10] Daher wird Niederschlag wahrscheinlich.",
+        "[11] Daher ist Schneefall zu erwarten.",
+        "[12] Lissabon hat eine hohe Luftfeuchtigkeit und erlebt entweder Morgennebel oder Nachmittagschauer."
+      ]
+    },
+    {
+      "topic": "weather_ja",
+      "lang": "ja",
+      "steps": [
+        "[1] \u524d\u7dda\u304c\u3053\u306e\u5730\u57df\u306b\u63a5\u8fd1\u3059\u308c\u3070\u3001\u96f2\u91cf\u304c\u5897\u3048\u308b\u3002",
+        "[2] \u96f2\u91cf\u304c\u5897\u3048\u308c\u3070\u3001\u964d\u6c34\u306e\u53ef\u80fd\u6027\u304c\u9ad8\u307e\u308b\u3002",
+        "[3] \u964d\u6c34\u304c\u898b\u8fbc\u307e\u308c\u3001\u304b\u3064\u6c17\u6e29\u304c\u6c37\u70b9\u4e0b\u306a\u3089\u3001\u964d\u96ea\u304c\u4e88\u60f3\u3055\u308c\u308b\u3002",
+        "[4] \u6c17\u6e29\u306f\u6c37\u70b9\u4e0b\u3067\u3042\u308b\u3002",
+        "[5] \u524d\u7dda\u304c\u3053\u306e\u5730\u57df\u306b\u63a5\u8fd1\u3057\u3066\u3044\u308b\u3002",
+        "[6] \u4efb\u610f\u306e\u90fd\u5e02x\u306b\u3064\u3044\u3066\u3001x\u304c\u6cbf\u5cb8\u90fd\u5e02\u306a\u3089\u3001x\u306f\u6e7f\u5ea6\u304c\u9ad8\u3044\u3002",
+        "[7] \u30ea\u30b9\u30dc\u30f3\u306f\u6cbf\u5cb8\u90fd\u5e02\u3067\u3042\u308b\u3002",
+        "[8] \u4efb\u610f\u306e\u90fd\u5e02x\u306b\u3064\u3044\u3066\u3001x\u306e\u6e7f\u5ea6\u304c\u9ad8\u3051\u308c\u3070\u3001x\u306b\u306f\u671d\u9727\u304b\u5348\u5f8c\u306e\u306b\u308f\u304b\u96e8\u306e\u3044\u305a\u308c\u304b\u304c\u767a\u751f\u3059\u308b\u3002",
+        "[9] \u3086\u3048\u306b\u3001\u96f2\u91cf\u304c\u5897\u3048\u308b\u3002",
+        "[10] \u3086\u3048\u306b\u3001\u964d\u6c34\u306e\u53ef\u80fd\u6027\u304c\u9ad8\u307e\u308b\u3002",
+        "[11] \u3086\u3048\u306b\u3001\u964d\u96ea\u304c\u4e88\u60f3\u3055\u308c\u308b\u3002",
+        "[12] \u30ea\u30b9\u30dc\u30f3\u306f\u6e7f\u5ea6\u304c\u9ad8\u304f\u3001\u671d\u9727\u304b\u5348\u5f8c\u306e\u306b\u308f\u304b\u96e8\u306e\u3044\u305a\u308c\u304b\u304c\u751f\u3058\u308b\u3002"
+      ]
+    }
+  ]
+}

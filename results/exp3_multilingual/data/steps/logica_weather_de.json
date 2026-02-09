@@ -1,0 +1,16 @@
+{
+  "label": "logicA:weather_de",
+  "logic": "logicA",
+  "topic": "weather_de",
+  "steps": [
+    "[1] Wenn über der Stadt Feuchte konvergiert, dann bilden sich Gewitterwolken.",
+    "[2] Wenn sich Gewitterwolken bilden, dann tritt starker Regen auf.",
+    "[3] Für jeden Ort x gilt: Wenn eine Kaltfront x überquert, dann sinkt dort die Temperatur.",
+    "[4] Eine Kaltfront überquert den Flughafen.",
+    "[5] Über der Stadt herrscht Feuchtekonvergenz.",
+    "[6] Aus [1] und [5] folgt, dass sich Gewitterwolken bilden.",
+    "[7] Aus [2] und [6] folgt, dass starker Regen auftritt.",
+    "[8] Aus [3] und [4] folgt, dass am Flughafen die Temperatur sinkt.",
+    "[9] Aus [7] und [8] folgt: Es tritt starker Regen auf und am Flughafen sinkt die Temperatur."
+  ]
+}
