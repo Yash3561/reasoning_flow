@@ -1,0 +1,19 @@
+{
+  "label": "logicC:history_en",
+  "logic": "logicC",
+  "topic": "history_en",
+  "steps": [
+    "[1] If the 1929 stock market crash occurred, then the Great Depression began.",
+    "[2] If the Great Depression began, then mass unemployment followed.",
+    "[3] If mass unemployment occurred and the New Deal was enacted, then the U.S. economy was significantly restructured.",
+    "[4] The New Deal was enacted.",
+    "[5] The 1929 stock market crash occurred.",
+    "[6] For every program x, if x was a New Deal program, then x was federally administered.",
+    "[7] The Civilian Conservation Corps was a New Deal program.",
+    "[8] For every program x, if x was federally administered, then x focused on either relief or reform.",
+    "[9] The Great Depression began (from [1] and [5]).",
+    "[10] Mass unemployment followed (from [2] and [9]).",
+    "[11] The U.S. economy was significantly restructured (from [3] and [10] and [4]).",
+    "[12] The Civilian Conservation Corps was federally administered and focused on either relief or reform (from [6] and [7] and [8])."
+  ]
+}

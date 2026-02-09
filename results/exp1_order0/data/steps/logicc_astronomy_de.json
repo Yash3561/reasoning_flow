@@ -1,0 +1,19 @@
+{
+  "label": "logicC:astronomy_de",
+  "logic": "logicC",
+  "topic": "astronomy_de",
+  "steps": [
+    "[1] Wenn die Lichtkurve eines Sterns periodische Verdunkelungen zeigt, dann hat er einen transitierenden Begleiter.",
+    "[2] Wenn ein Stern einen transitierenden Begleiter hat, dann kann der Radius des Begleiters aus der Transit-Tiefe abgeschätzt werden.",
+    "[3] Wenn der Radius des Begleiters bekannt ist und die Radialgeschwindigkeit des Sterns eine passende Periode zeigt, dann kann die mittlere Dichte des Begleiters berechnet werden.",
+    "[4] Die Radialgeschwindigkeit des Sterns zeigt ein periodisches Signal, das zur photometrischen Periode passt.",
+    "[5] Die Lichtkurve des Sterns zeigt periodische Verdunkelungen.",
+    "[6] Für jedes Objekt x gilt: Wenn x ein Gasriese als Exoplanet ist, dann besitzt x eine wasserstoffdominierte Atmosphäre.",
+    "[7] Planet a ist ein Gasriese als Exoplanet.",
+    "[8] Für jedes Objekt x gilt: Wenn x eine wasserstoffdominierte Atmosphäre besitzt, dann zeigt sein Spektrum entweder Methan- oder Wasserdampfabsorptionslinien.",
+    "[9] Der Stern hat einen transitierenden Begleiter. (aus [1] und [5])",
+    "[10] Der Radius des Begleiters kann aus der Transit-Tiefe abgeschätzt werden. (aus [2] und [9])",
+    "[11] Die mittlere Dichte des Begleiters kann berechnet werden. (aus [3] und [10] und [4])",
+    "[12] Planet a besitzt eine wasserstoffdominierte Atmosphäre und sein Spektrum zeigt entweder Methan- oder Wasserdampfabsorptionslinien. (aus [6], [7], [8])"
+  ]
+}

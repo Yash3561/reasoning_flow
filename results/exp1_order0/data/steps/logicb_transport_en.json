@@ -1,0 +1,15 @@
+{
+  "label": "logicB:transport_en",
+  "logic": "logicB",
+  "topic": "transport_en",
+  "steps": [
+    "[1] If the closure on Highway 7 is lifted, then Highway 7 is reopened to traffic.",
+    "[2] If Highway 7 is reopened to traffic, then traffic may enter Highway 7.",
+    "[3] For any truck x, if x passes the weigh station inspection, then x is cleared to use Highway 7.",
+    "[4] If traffic may enter Highway 7 and Truck A is cleared to use Highway 7, then Truck A may enter Highway 7.",
+    "[5] The closure on Highway 7 is lifted.",
+    "[6] Truck A passes the weigh station inspection.",
+    "[7] Traffic may enter Highway 7 and Truck A is cleared to use Highway 7. (from [1–3],[5],[6])",
+    "[8] Truck A may enter Highway 7. (from [4] and [7])"
+  ]
+}

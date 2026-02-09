@@ -1,0 +1,19 @@
+{
+  "label": "logicC:finance_de",
+  "logic": "logicC",
+  "topic": "finance_de",
+  "steps": [
+    "[1] Wenn das Unternehmen stetig positiven freien Cashflow erwirtschaftet, dann kann es seine Zinszahlungen bequem bedienen.",
+    "[2] Wenn das Unternehmen seine Zinszahlungen bequem bedienen kann, dann qualifiziert es sich für eine Refinanzierung zu niedrigeren Zinssätzen.",
+    "[3] Wenn sich das Unternehmen für eine Refinanzierung zu niedrigeren Zinssätzen qualifiziert und die Marktzinsen gefallen sind, dann sinken die gewichteten durchschnittlichen Kapitalkosten des Unternehmens.",
+    "[4] Die Marktzinsen sind gefallen.",
+    "[5] Das Unternehmen erwirtschaftet stetig positiven freien Cashflow.",
+    "[6] Für jeden Anleger x gilt: Wenn x ein diversifiziertes Portfolio hält, dann reduziert x das unsystematische Risiko.",
+    "[7] Anleger a hält ein diversifiziertes Portfolio.",
+    "[8] Für jeden Anleger x gilt: Wenn x das unsystematische Risiko reduziert, dann erzielt x entweder ein gleichmäßigeres Renditeprofil oder vermeidet starke Einbrüche.",
+    "[9] Das Unternehmen kann seine Zinszahlungen bequem bedienen. (aus [1] und [5])",
+    "[10] Das Unternehmen qualifiziert sich für eine Refinanzierung zu niedrigeren Zinssätzen. (aus [2] und [9])",
+    "[11] Die gewichteten durchschnittlichen Kapitalkosten des Unternehmens sinken. (aus [3], [10] und [4])",
+    "[12] Anleger a reduziert das unsystematische Risiko und erzielt entweder ein gleichmäßigeres Renditeprofil oder vermeidet starke Einbrüche. (aus [6], [7] und [8])"
+  ]
+}

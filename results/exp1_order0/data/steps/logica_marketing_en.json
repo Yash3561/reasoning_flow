@@ -1,0 +1,16 @@
+{
+  "label": "logicA:marketing_en",
+  "logic": "logicA",
+  "topic": "marketing_en",
+  "steps": [
+    "[1] If we run a targeted email campaign, then leads visit the product landing page.",
+    "[2] If leads visit the product landing page, then trial sign-ups increase.",
+    "[3] For every lead x, if x fits our ideal customer profile, then x clicks the personalized CTA.",
+    "[4] Lead a fits our ideal customer profile.",
+    "[5] We run a targeted email campaign.",
+    "[6] Leads visit the product landing page (from [1] and [5]).",
+    "[7] Trial sign-ups increase (from [2] and [6]).",
+    "[8] Lead a clicks the personalized CTA (from [3] and [4]).",
+    "[9] Trial sign-ups increase and lead a clicks the personalized CTA (from [7] and [8])."
+  ]
+}

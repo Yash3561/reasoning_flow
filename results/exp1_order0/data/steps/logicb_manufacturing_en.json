@@ -1,0 +1,15 @@
+{
+  "label": "logicB:manufacturing_en",
+  "logic": "logicB",
+  "topic": "manufacturing_en",
+  "steps": [
+    "[1] If a batch is from an approved supplier, then it passes incoming inspection.",
+    "[2] If a batch passes incoming inspection, then it is released to production.",
+    "[3] For every machine x, if x passes calibration, then x is qualified for production.",
+    "[4] If the batch is released to production and CNC-12 is qualified for production, then the production run can start.",
+    "[5] The batch is from an approved supplier.",
+    "[6] CNC-12 passes calibration.",
+    "[7] The batch is released to production and CNC-12 is qualified for production.",
+    "[8] The production run starts."
+  ]
+}

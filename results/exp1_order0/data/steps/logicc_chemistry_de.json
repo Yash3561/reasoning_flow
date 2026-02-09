@@ -1,0 +1,19 @@
+{
+  "label": "logicC:chemistry_de",
+  "logic": "logicC",
+  "topic": "chemistry_de",
+  "steps": [
+    "[1] Wenn Salzsäure zu einer Natriumcarbonat-Lösung gegeben wird, entsteht Kohlendioxidgas.",
+    "[2] Wenn Kohlendioxid entsteht, führt das Einleiten in Kalkwasser zu einer Trübung.",
+    "[3] Wenn Kalkwasser trüb wird und die Trübung bei weiterem Einleiten von CO2 wieder verschwindet, ist das Gas als Kohlendioxid bestätigt.",
+    "[4] Bei fortgesetztem Einleiten des Gases verschwindet die Trübung des Kalkwassers.",
+    "[5] Salzsäure wird zu einer Natriumcarbonat-Lösung gegeben.",
+    "[6] Für jede Substanz x gilt: Ist x eine Brønsted-Säure, dann spendet x in Wasser ein Proton.",
+    "[7] Die Substanz a (Essigsäure) ist eine Brønsted-Säure.",
+    "[8] Für jede Substanz x gilt: Wenn x in Wasser ein Proton spendet, dann senkt x entweder den pH-Wert oder reagiert mit Carbonat unter CO2-Entwicklung.",
+    "[9] Es entsteht Kohlendioxidgas. (aus [1] und [5])",
+    "[10] Kalkwasser wird trüb. (aus [2] und [9])",
+    "[11] Das Gas ist als Kohlendioxid bestätigt. (aus [3] und [10] und [4])",
+    "[12] a spendet in Wasser ein Proton und senkt entweder den pH-Wert oder reagiert mit Carbonat unter CO2-Entwicklung. (aus [6],[7],[8])"
+  ]
+}

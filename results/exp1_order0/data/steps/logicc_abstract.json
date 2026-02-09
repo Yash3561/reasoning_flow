@@ -1,0 +1,19 @@
+{
+  "label": "logicC:abstract",
+  "logic": "logicC",
+  "topic": null,
+  "steps": [
+    "[1] A→B",
+    "[2] B→C",
+    "[3] (C ∧ D)→E",
+    "[4] D",
+    "[5] A",
+    "[6] ∀x(H(x)→J(x))",
+    "[7] H(a)",
+    "[8] ∀x(J(x)→(K(x) ∨ L(x)))",
+    "[9] B  (from [1] and [5])",
+    "[10] C  (from [2] and [9])",
+    "[11] E  (from [3] and [10] and [4])",
+    "[12] J(a) ∧ (K(a) ∨ L(a))  (from [6],[7],[8])"
+  ]
+}

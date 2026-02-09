@@ -1,0 +1,21 @@
+{
+  "pooling": "step_mean",
+  "accumulation": "cumulative",
+  "context_aware_k": 16,
+  "similarity_order": 1,
+  "sections": "logicA",
+  "hf_model": "Qwen/Qwen2.5-0.5B",
+  "device": "cpu",
+  "labels": [
+    "logicA:abstract",
+    "logicA:weather_en",
+    "logicA:weather_zh",
+    "logicA:weather_de",
+    "logicA:weather_ja"
+  ],
+  "load_in_8bit": false,
+  "load_in_4bit": false,
+  "device_map": "auto",
+  "dtype": "auto",
+  "attn_implementation": null
+}

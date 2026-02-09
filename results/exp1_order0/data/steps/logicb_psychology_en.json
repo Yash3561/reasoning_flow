@@ -1,0 +1,15 @@
+{
+  "label": "logicB:psychology_en",
+  "logic": "logicB",
+  "topic": "psychology_en",
+  "steps": [
+    "[1] If a person is chronically sleep deprived, they tend to show elevated stress markers.",
+    "[2] If a person shows elevated stress markers, they tend to develop concentration difficulties.",
+    "[3] For any person x, if x practices mindfulness, x shows reduced rumination.",
+    "[4] If Jordan has concentration difficulties and reduced rumination, then the treatment should prioritize sleep restoration.",
+    "[5] Jordan is chronically sleep deprived.",
+    "[6] Jordan practices mindfulness daily.",
+    "[7] From [1–3], [5], and [6], Jordan has concentration difficulties and reduced rumination.",
+    "[8] From [4] and [7], Jordan’s treatment should prioritize sleep restoration."
+  ]
+}

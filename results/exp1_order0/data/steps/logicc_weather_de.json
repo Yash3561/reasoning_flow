@@ -1,0 +1,19 @@
+{
+  "label": "logicC:weather_de",
+  "logic": "logicC",
+  "topic": "weather_de",
+  "steps": [
+    "[1] Wenn sich ein Frontsystem der Region nähert, nimmt die Bewölkung zu.",
+    "[2] Wenn die Bewölkung zunimmt, wird Niederschlag wahrscheinlich.",
+    "[3] Wenn Niederschlag wahrscheinlich ist und die Temperaturen unter dem Gefrierpunkt liegen, ist Schneefall zu erwarten.",
+    "[4] Die Temperaturen liegen unter dem Gefrierpunkt.",
+    "[5] Ein Frontsystem nähert sich der Region.",
+    "[6] Für jede Stadt x gilt: Wenn x eine Küstenstadt ist, hat x eine hohe Luftfeuchtigkeit.",
+    "[7] Lissabon ist eine Küstenstadt.",
+    "[8] Für jede Stadt x gilt: Wenn x eine hohe Luftfeuchtigkeit hat, bekommt x entweder Morgennebel oder Nachmittagschauer.",
+    "[9] Daher nimmt die Bewölkung zu.",
+    "[10] Daher wird Niederschlag wahrscheinlich.",
+    "[11] Daher ist Schneefall zu erwarten.",
+    "[12] Lissabon hat eine hohe Luftfeuchtigkeit und erlebt entweder Morgennebel oder Nachmittagschauer."
+  ]
+}

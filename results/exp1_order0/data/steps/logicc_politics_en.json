@@ -1,0 +1,19 @@
+{
+  "label": "logicC:politics_en",
+  "logic": "logicC",
+  "topic": "politics_en",
+  "steps": [
+    "[1] If the governing coalition holds a majority vote for the bill, then the bill passes the legislature.",
+    "[2] If the bill passes the legislature, then it is presented to the head of state for signature.",
+    "[3] If the bill is presented to the head of state for signature and the head of state signs it, then the bill becomes law.",
+    "[4] The head of state signs the bill.",
+    "[5] The governing coalition holds a majority vote for the bill.",
+    "[6] For every candidate x, if x meets the legal eligibility requirements, then x is qualified to run for office.",
+    "[7] Candidate a meets the legal eligibility requirements.",
+    "[8] For every candidate x, if x is qualified to run for office, then x either secures party endorsement or runs as an independent.",
+    "[9] The bill passes the legislature.",
+    "[10] The bill is presented to the head of state for signature.",
+    "[11] The bill becomes law.",
+    "[12] Candidate a is qualified to run for office and either secures party endorsement or runs as an independent."
+  ]
+}

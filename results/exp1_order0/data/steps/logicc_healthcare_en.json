@@ -1,0 +1,19 @@
+{
+  "label": "logicC:healthcare_en",
+  "logic": "logicC",
+  "topic": "healthcare_en",
+  "steps": [
+    "[1] If the patient presents with fever and cough, the clinician orders a chest X-ray.",
+    "[2] If a chest X-ray is ordered, the radiology report becomes available.",
+    "[3] If the radiology report is available and the oxygen saturation is below 90%, the clinician initiates inpatient pneumonia management.",
+    "[4] The oxygen saturation is below 90%.",
+    "[5] The patient presents with fever and cough.",
+    "[6] For all patients x, if x is enrolled in the diabetes program, then x has a documented HbA1c result.",
+    "[7] Patient a is enrolled in the diabetes program.",
+    "[8] For all patients x, if x has a documented HbA1c result, then the result is either at or below target or above target.",
+    "[9] A chest X-ray is ordered.",
+    "[10] The radiology report becomes available.",
+    "[11] The clinician initiates inpatient pneumonia management.",
+    "[12] Patient a has a documented HbA1c result, and that result is either at or below target or above target."
+  ]
+}

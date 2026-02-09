@@ -1,0 +1,16 @@
+{
+  "label": "logicA:chemistry_en",
+  "logic": "logicA",
+  "topic": "chemistry_en",
+  "steps": [
+    "[1] If a primary alcohol is oxidized under these conditions, an aldehyde forms.",
+    "[2] If an aldehyde is exposed to excess oxidant, a carboxylic acid results.",
+    "[3] For any species x, if x is a Lewis acid, then x accepts an electron pair from a Lewis base.",
+    "[4] Aluminum chloride (AlCl3) is a Lewis acid.",
+    "[5] A primary alcohol in the sample is subjected to these oxidizing conditions.",
+    "[6] Therefore an aldehyde forms from the primary alcohol (from [1] and [5]).",
+    "[7] Therefore a carboxylic acid forms from that aldehyde (from [2] and [6]).",
+    "[8] Therefore AlCl3 accepts an electron pair from a Lewis base (from [3] and [4]).",
+    "[9] Consequently, a carboxylic acid is obtained and AlCl3 accepts an electron pair (from [7] and [8])."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "label": "logicC:history_de",
+  "logic": "logicC",
+  "topic": "history_de",
+  "steps": [
+    "[1] Wenn der Börsenkrach von 1929 eintrat, dann begann die Große Depression.",
+    "[2] Wenn die Große Depression begann, dann folgte Massenarbeitslosigkeit.",
+    "[3] Wenn Massenarbeitslosigkeit herrschte und der New Deal umgesetzt wurde, dann wurde die US-Wirtschaft deutlich umstrukturiert.",
+    "[4] Der New Deal wurde umgesetzt.",
+    "[5] Der Börsenkrach von 1929 trat ein.",
+    "[6] Für jedes Programm x gilt: Wenn x ein New-Deal-Programm war, dann wurde x vom Bund verwaltet.",
+    "[7] Das Civilian Conservation Corps war ein New-Deal-Programm.",
+    "[8] Für jedes Programm x gilt: Wenn x vom Bund verwaltet wurde, dann war x entweder auf Hilfe oder auf Reform ausgerichtet.",
+    "[9] Die Große Depression begann (aus [1] und [5]).",
+    "[10] Massenarbeitslosigkeit folgte (aus [2] und [9]).",
+    "[11] Die US-Wirtschaft wurde deutlich umstrukturiert (aus [3] und [10] und [4]).",
+    "[12] Das Civilian Conservation Corps wurde vom Bund verwaltet und war entweder auf Hilfe oder auf Reform ausgerichtet (aus [6] und [7] und [8])."
+  ]
+}

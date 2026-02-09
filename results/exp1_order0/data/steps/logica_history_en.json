@@ -1,0 +1,16 @@
+{
+  "label": "logicA:history_en",
+  "logic": "logicA",
+  "topic": "history_en",
+  "steps": [
+    "[1] If the British Crown levied new taxes on the American colonies, colonial protests intensified.",
+    "[2] If colonial protests intensified, open revolution erupted.",
+    "[3] For every figure x, if x was a major Enlightenment thinker, x argued for natural rights.",
+    "[4] John Locke was a major Enlightenment thinker.",
+    "[5] The British Crown levied new taxes on the American colonies.",
+    "[6] Colonial protests intensified (from [1] and [5]).",
+    "[7] Open revolution erupted (from [2] and [6]).",
+    "[8] John Locke argued for natural rights (from [3] and [4]).",
+    "[9] Open revolution erupted and John Locke argued for natural rights (from [7] and [8])."
+  ]
+}

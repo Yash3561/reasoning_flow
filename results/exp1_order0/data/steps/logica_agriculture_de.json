@@ -1,0 +1,16 @@
+{
+  "label": "logicA:agriculture_de",
+  "logic": "logicA",
+  "topic": "agriculture_de",
+  "steps": [
+    "[1] Wenn wir mit Stickstoff düngen, steigt das Blattchlorophyll.",
+    "[2] Wenn das Blattchlorophyll steigt, steigt der Kornertrag.",
+    "[3] Für jedes Feld x gilt: Hat x einen Boden-pH unter 5,5, dann ist eine Kalkung erforderlich.",
+    "[4] Feld Alpha hat einen Boden-pH unter 5,5.",
+    "[5] Wir düngen mit Stickstoff.",
+    "[6] Daher steigt das Blattchlorophyll.",
+    "[7] Daher steigt der Kornertrag.",
+    "[8] Daher ist für Feld Alpha eine Kalkung erforderlich.",
+    "[9] Also steigt der Kornertrag und für Feld Alpha ist eine Kalkung erforderlich."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "logicA:transport_en",
+  "logic": "logicA",
+  "topic": "transport_en",
+  "steps": [
+    "[1] If the main bridge is closed, then traffic is diverted via the ring road.",
+    "[2] If traffic is diverted via the ring road, then travel time increases.",
+    "[3] For every vehicle x, if x is a heavy vehicle, then x must use the freight lane.",
+    "[4] T1 is a heavy vehicle.",
+    "[5] The main bridge is closed.",
+    "[6] Traffic is diverted via the ring road. (from [1] and [5])",
+    "[7] Travel time increases. (from [2] and [6])",
+    "[8] T1 must use the freight lane. (from [3] and [4])",
+    "[9] Travel time increases and T1 must use the freight lane. (from [7] and [8])"
+  ]
+}

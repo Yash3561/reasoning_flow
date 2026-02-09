@@ -1,0 +1,15 @@
+{
+  "label": "logicB:finance_en",
+  "logic": "logicB",
+  "topic": "finance_en",
+  "steps": [
+    "[1] If the central bank lowers the policy rate, commercial bank funding costs decrease.",
+    "[2] If commercial bank funding costs decrease, the bank expands loan supply.",
+    "[3] For any borrower x, if x’s debt-service coverage ratio (DSCR) exceeds 1.5, then x has low default risk.",
+    "[4] If the bank expands loan supply and borrower a has low default risk, then approve the loan to a.",
+    "[5] The central bank lowers the policy rate.",
+    "[6] Borrower a’s DSCR exceeds 1.5.",
+    "[7] The bank expands loan supply and borrower a has low default risk (from [1–3],[5],[6]).",
+    "[8] Approve the loan to a (from [4] and [7])."
+  ]
+}

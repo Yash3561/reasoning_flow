@@ -1,0 +1,19 @@
+{
+  "label": "logicC:robotics_de",
+  "logic": "logicC",
+  "topic": "robotics_de",
+  "steps": [
+    "[1] Wenn der Akkustand für den Start ausreichend ist, dann wird die Startsequenz fortgesetzt.",
+    "[2] Wenn die Startsequenz fortgesetzt wird, dann wird der Bewegungscontroller betriebsbereit.",
+    "[3] Wenn der Bewegungscontroller betriebsbereit ist und der Not-Halt freigegeben ist, dann ist Bewegung freigegeben.",
+    "[4] Der Not-Halt ist freigegeben.",
+    "[5] Der Akkustand ist für den Start ausreichend.",
+    "[6] Für jeden Roboter x gilt: Wenn das Wahrnehmungsmodul von x aktiv ist, dann erkennt x Hindernisse.",
+    "[7] Beim Roboter a ist das Wahrnehmungsmodul aktiv.",
+    "[8] Für jeden Roboter x gilt: Wenn x Hindernisse erkennt, dann plant x entweder eine Ausweichtrajektorie oder stoppt.",
+    "[9] Daher wird die Startsequenz fortgesetzt (aus [1] und [5]).",
+    "[10] Daher wird der Bewegungscontroller betriebsbereit (aus [2] und [9]).",
+    "[11] Daher ist Bewegung freigegeben (aus [3], [10] und [4]).",
+    "[12] Daher erkennt Roboter a Hindernisse und plant entweder eine Ausweichtrajektorie oder stoppt (aus [6], [7] und [8])."
+  ]
+}

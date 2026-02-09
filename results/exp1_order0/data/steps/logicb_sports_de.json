@@ -1,0 +1,15 @@
+{
+  "label": "logicB:sports_de",
+  "logic": "logicB",
+  "topic": "sports_de",
+  "steps": [
+    "[1] Wenn die Mannschaft das Mittelfeldduell gewinnt, dann kontrolliert sie den Ballbesitz.",
+    "[2] Wenn sie den Ballbesitz kontrolliert, dann erspielt sie Torchancen.",
+    "[3] Jeder Spieler, der ein intensives Torabschlusstraining absolviert hat, ist vor dem Tor treffsicher.",
+    "[4] Wenn die Mannschaft Torchancen erspielt und Stürmer Lee vor dem Tor treffsicher ist, dann erzielt die Mannschaft ein Tor.",
+    "[5] Die Mannschaft gewinnt das Mittelfeldduell.",
+    "[6] Stürmer Lee hat ein intensives Torabschlusstraining absolviert.",
+    "[7] Die Mannschaft erspielt Torchancen und Stürmer Lee ist vor dem Tor treffsicher (aus [1–3], [5], [6]).",
+    "[8] Die Mannschaft erzielt ein Tor (aus [4] und [7])."
+  ]
+}

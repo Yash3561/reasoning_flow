@@ -1,0 +1,16 @@
+{
+  "label": "logicA:robotics_de",
+  "logic": "logicA",
+  "topic": "robotics_de",
+  "steps": [
+    "[1] Wenn R2 ausreichende Akkuladung hat, dann kann R2 seine Motoren einschalten.",
+    "[2] Wenn R2 seine Motoren einschalten kann, dann kann R2 sich bewegen.",
+    "[3] Für jeden Roboter x gilt: Wenn x mit einem Lidar-Sensor ausgestattet ist, dann kann x Hinderniserkennung durchführen.",
+    "[4] R2 ist mit einem Lidar-Sensor ausgestattet.",
+    "[5] R2 hat ausreichende Akkuladung.",
+    "[6] R2 kann seine Motoren einschalten (aus [1] und [5]).",
+    "[7] R2 kann sich bewegen (aus [2] und [6]).",
+    "[8] R2 kann Hinderniserkennung durchführen (aus [3] und [4]).",
+    "[9] R2 kann sich bewegen und Hinderniserkennung durchführen (aus [7] und [8])."
+  ]
+}

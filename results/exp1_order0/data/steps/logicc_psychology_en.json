@@ -1,0 +1,19 @@
+{
+  "label": "logicC:psychology_en",
+  "logic": "logicC",
+  "topic": "psychology_en",
+  "steps": [
+    "[1] If the client reports chronic stress, then sleep disturbances occur.",
+    "[2] If sleep disturbances occur, then daytime fatigue develops.",
+    "[3] If daytime fatigue is present and job demands are high, then work performance declines.",
+    "[4] The client faces high job demands.",
+    "[5] The client reports chronic stress.",
+    "[6] For all individuals x, if x shows persistent cognitive distortions, then x benefits from CBT.",
+    "[7] Person a shows persistent cognitive distortions.",
+    "[8] For all individuals x, if x benefits from CBT, then x should receive either cognitive restructuring or behavioral activation.",
+    "[9] Sleep disturbances occur (from [1] and [5]).",
+    "[10] Daytime fatigue develops (from [2] and [9]).",
+    "[11] Work performance declines (from [3] and [10] and [4]).",
+    "[12] Person a benefits from CBT and should receive either cognitive restructuring or behavioral activation (from [6] and [7] and [8])."
+  ]
+}

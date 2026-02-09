@@ -1,0 +1,19 @@
+{
+  "label": "logicC:energy_en",
+  "logic": "logicC",
+  "topic": "energy_en",
+  "steps": [
+    "[1] If solar irradiance exceeds the PV array’s start-up threshold, the PV array generates DC power.",
+    "[2] If the PV array generates DC power, the inverter has sufficient DC input.",
+    "[3] If the inverter has sufficient DC input and the grid is synchronized, the system exports AC power to the grid.",
+    "[4] The grid is synchronized.",
+    "[5] Solar irradiance exceeds the PV array’s start-up threshold.",
+    "[6] For every inverter x, if x complies with IEEE 1547, then x is approved for grid interconnection.",
+    "[7] Inverter a complies with IEEE 1547.",
+    "[8] For every inverter x, if x is approved for grid interconnection, then x either is under utility monitoring or has built-in anti-islanding protection.",
+    "[9] The PV array generates DC power. (from [1] and [5])",
+    "[10] The inverter has sufficient DC input. (from [2] and [9])",
+    "[11] The system exports AC power to the grid. (from [3] and [10] and [4])",
+    "[12] Inverter a is approved for grid interconnection, and inverter a either is under utility monitoring or has built-in anti-islanding protection. (from [6], [7], [8])"
+  ]
+}

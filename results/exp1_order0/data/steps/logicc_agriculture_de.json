@@ -1,0 +1,19 @@
+{
+  "label": "logicC:agriculture_de",
+  "logic": "logicC",
+  "topic": "agriculture_de",
+  "steps": [
+    "[1] Wenn der Boden feucht ist, können die Samen keimen.",
+    "[2] Wenn die Samen keimen können, gehen die Keimlinge auf.",
+    "[3] Wenn Keimlinge aufgegangen sind und die Temperatur ausreichend warm ist, stellt sich auf dem Feld ein tragfähiger Bestand ein.",
+    "[4] Die Temperatur ist ausreichend warm.",
+    "[5] Der Boden ist feucht.",
+    "[6] Für jede Pflanze x gilt: Wenn x positiv auf Sporen der Kraut- und Knollenfäule testet, hat x ein Infektionsrisiko durch diese Krankheit.",
+    "[7] Pflanze a testet positiv auf Sporen der Kraut- und Knollenfäule.",
+    "[8] Für jede Pflanze x gilt: Wenn x ein Infektionsrisiko hat, dann sollte x entweder mit Fungizid behandelt werden oder x wird voraussichtlich Ertragseinbußen erleiden.",
+    "[9] Die Samen können keimen.",
+    "[10] Die Keimlinge gehen auf.",
+    "[11] Auf dem Feld stellt sich ein tragfähiger Bestand ein.",
+    "[12] Pflanze a hat ein Infektionsrisiko, und entweder sollte sie mit Fungizid behandelt werden oder sie wird voraussichtlich Ertragseinbußen erleiden."
+  ]
+}

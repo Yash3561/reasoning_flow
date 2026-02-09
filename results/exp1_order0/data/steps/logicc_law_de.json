@@ -1,0 +1,19 @@
+{
+  "label": "logicC:law_de",
+  "logic": "logicC",
+  "topic": "law_de",
+  "steps": [
+    "[1] Wenn die Parteien für den Kauf von Waren im Wert von über 500 US‑Dollar ein unterzeichnetes Schriftstück erstellt haben, ist das Schriftformerfordernis erfüllt.",
+    "[2] Wenn das Schriftformerfordernis erfüllt ist, ist der Vertrag durchsetzbar.",
+    "[3] Wenn der Vertrag durchsetzbar ist und der Käufer den Vertragspreis nicht gezahlt hat, hat der Verkäufer Anspruch auf Schadensersatz wegen Vertragsverletzung.",
+    "[4] Der Käufer hat den Vertragspreis nicht gezahlt.",
+    "[5] Die Parteien haben für den Kauf von Waren im Wert von über 500 US‑Dollar ein unterzeichnetes Schriftstück erstellt.",
+    "[6] Für alle Personen x gilt: Wenn x Waren bei einem Unternehmer gekauft hat, genießt x die gesetzliche Gewährleistung.",
+    "[7] a hat Waren bei einem Unternehmer gekauft.",
+    "[8] Für alle Personen x gilt: Wenn x die gesetzliche Gewährleistung genießt, kann x entweder Nachbesserung oder Ersatzlieferung verlangen oder Rückzahlung oder Schadensersatz geltend machen.",
+    "[9] Daher ist das Schriftformerfordernis erfüllt.",
+    "[10] Daher ist der Vertrag durchsetzbar.",
+    "[11] Daher hat der Verkäufer Anspruch auf Schadensersatz wegen Vertragsverletzung.",
+    "[12] Daher genießt a die gesetzliche Gewährleistung und kann entweder Nachbesserung oder Ersatzlieferung verlangen oder Rückzahlung oder Schadensersatz geltend machen."
+  ]
+}

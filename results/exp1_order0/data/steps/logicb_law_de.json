@@ -1,0 +1,15 @@
+{
+  "label": "logicB:law_de",
+  "logic": "logicB",
+  "topic": "law_de",
+  "steps": [
+    "[1] Wenn beide Parteien den Vertrag unterschrieben haben, ist der Vertrag wirksam.",
+    "[2] Wenn der Vertrag wirksam ist, ist der Vertrag durchsetzbar.",
+    "[3] Für jede Person x gilt: Ist x Vertragspartei, dann hat x Klagebefugnis zur Durchsetzung des Vertrages.",
+    "[4] Wenn der Vertrag durchsetzbar ist und Alice klagebefugt ist, spricht das Gericht ein Urteil zugunsten von Alice.",
+    "[5] Beide Parteien haben den Vertrag unterschrieben.",
+    "[6] Alice ist Vertragspartei.",
+    "[7] Folglich ist der Vertrag durchsetzbar und Alice ist klagebefugt.",
+    "[8] Folglich spricht das Gericht ein Urteil zugunsten von Alice."
+  ]
+}

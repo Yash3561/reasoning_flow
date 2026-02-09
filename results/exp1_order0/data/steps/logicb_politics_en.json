@@ -1,0 +1,15 @@
+{
+  "label": "logicB:politics_en",
+  "logic": "logicB",
+  "topic": "politics_en",
+  "steps": [
+    "[1] If the party wins a parliamentary majority, then it forms the government.",
+    "[2] If the party forms the government, then it controls the legislative agenda.",
+    "[3] For every candidate x, if x is vetted by the ethics committee, then x is deemed trustworthy by the party.",
+    "[4] If the party controls the legislative agenda and Ms. Lee is deemed trustworthy, then the party will advance Ms. Lee's bill.",
+    "[5] The party wins a parliamentary majority.",
+    "[6] Ms. Lee is vetted by the ethics committee.",
+    "[7] Therefore, the party controls the legislative agenda and Ms. Lee is deemed trustworthy.",
+    "[8] Therefore, the party will advance Ms. Lee's bill."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "label": "logicB:manufacturing_de",
+  "logic": "logicB",
+  "topic": "manufacturing_de",
+  "steps": [
+    "[1] Wenn eine Charge von einem zugelassenen Lieferanten stammt, besteht sie die Wareneingangsprüfung.",
+    "[2] Wenn eine Charge die Wareneingangsprüfung besteht, wird sie für die Produktion freigegeben.",
+    "[3] Für jede Maschine x gilt: Wenn x die Kalibrierung besteht, ist x für die Produktion qualifiziert.",
+    "[4] Wenn die Charge für die Produktion freigegeben ist und CNC-12 für die Produktion qualifiziert ist, kann der Produktionslauf gestartet werden.",
+    "[5] Die Charge stammt von einem zugelassenen Lieferanten.",
+    "[6] CNC-12 besteht die Kalibrierung.",
+    "[7] Die Charge ist für die Produktion freigegeben und CNC-12 ist für die Produktion qualifiziert.",
+    "[8] Der Produktionslauf startet."
+  ]
+}

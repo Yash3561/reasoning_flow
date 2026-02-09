@@ -1,0 +1,16 @@
+{
+  "label": "logicA:history_de",
+  "logic": "logicA",
+  "topic": "history_de",
+  "steps": [
+    "[1] Wenn die britische Krone neue Steuern in den amerikanischen Kolonien erhob, intensivierten sich die kolonialen Proteste.",
+    "[2] Wenn sich die kolonialen Proteste intensivierten, brach eine offene Revolution aus.",
+    "[3] Für jede Person x gilt: Wenn x ein bedeutender Aufklärer war, vertrat x die Lehre der natürlichen Rechte.",
+    "[4] John Locke war ein bedeutender Aufklärer.",
+    "[5] Die britische Krone erhob neue Steuern in den amerikanischen Kolonien.",
+    "[6] Die kolonialen Proteste intensivierten sich (aus [1] und [5]).",
+    "[7] Eine offene Revolution brach aus (aus [2] und [6]).",
+    "[8] John Locke vertrat die Lehre der natürlichen Rechte (aus [3] und [4]).",
+    "[9] Eine offene Revolution brach aus und John Locke vertrat die Lehre der natürlichen Rechte (aus [7] und [8])."
+  ]
+}

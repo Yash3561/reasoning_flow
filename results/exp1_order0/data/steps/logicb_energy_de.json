@@ -1,0 +1,15 @@
+{
+  "label": "logicB:energy_de",
+  "logic": "logicB",
+  "topic": "energy_de",
+  "steps": [
+    "[1] Wenn die solare Einstrahlung am Kraftwerk S über 900 W/m² liegt, dann liefert Kraftwerk S mehr als 50 MW.",
+    "[2] Wenn Kraftwerk S mehr als 50 MW liefert, dann besteht ein Überschuss an erneuerbarer Leistung im Netzabschnitt.",
+    "[3] Für jede Speichereinheit x gilt: Wenn x netzgekoppelt ist, dann kann x Leistung aufnehmen.",
+    "[4] Wenn im Netzabschnitt ein Überschuss an erneuerbarer Leistung besteht und Batterie B1 Leistung aufnehmen kann, dann startet der Controller das Laden von B1.",
+    "[5] Die solare Einstrahlung am Kraftwerk S liegt über 900 W/m².",
+    "[6] Batterie B1 ist netzgekoppelt.",
+    "[7] Es besteht ein Überschuss an erneuerbarer Leistung im Netzabschnitt und Batterie B1 kann Leistung aufnehmen.",
+    "[8] Der Controller startet das Laden von B1."
+  ]
+}

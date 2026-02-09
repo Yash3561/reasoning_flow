@@ -1,0 +1,16 @@
+{
+  "label": "logicA:finance_en",
+  "logic": "logicA",
+  "topic": "finance_en",
+  "steps": [
+    "[1] If the firm’s interest coverage ratio exceeds 3.0x, then the firm is deemed able to meet interest obligations.",
+    "[2] If the firm is deemed able to meet interest obligations, then the bank will approve a new term loan.",
+    "[3] For any security x, if x is a U.S. Treasury, then x is acceptable as repo collateral.",
+    "[4] Bond A is a U.S. Treasury.",
+    "[5] The firm’s interest coverage ratio exceeds 3.0x.",
+    "[6] The firm is deemed able to meet interest obligations (from [1] and [5]).",
+    "[7] The bank will approve a new term loan (from [2] and [6]).",
+    "[8] Bond A is acceptable as repo collateral (from [3] and [4]).",
+    "[9] The bank will approve a new term loan and Bond A is acceptable as repo collateral (from [7] and [8])."
+  ]
+}

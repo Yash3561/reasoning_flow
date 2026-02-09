@@ -1,0 +1,15 @@
+{
+  "label": "logicB:education_de",
+  "logic": "logicB",
+  "topic": "education_de",
+  "steps": [
+    "[1] Wenn eine studierende Person den Voraussetzungskurs abschließt, erfüllt sie die Studienanforderung.",
+    "[2] Wenn eine studierende Person die Studienanforderung erfüllt, erhält sie Zugang zum Aufbauseminar.",
+    "[3] Für alle Studierenden x gilt: Wenn x einen den Richtlinien entsprechenden Forschungsantrag einreicht, wird der Antrag von x genehmigt.",
+    "[4] Wenn Student A Zugang zum Aufbauseminar hat und der Antrag von Student A genehmigt ist, kann sich Student A für das Abschlussprojekt anmelden.",
+    "[5] Student A hat den Voraussetzungskurs abgeschlossen.",
+    "[6] Student A hat einen den Richtlinien entsprechenden Forschungsantrag eingereicht.",
+    "[7] Student A hat Zugang zum Aufbauseminar, und der Antrag von Student A ist genehmigt.",
+    "[8] Student A kann sich für das Abschlussprojekt anmelden."
+  ]
+}

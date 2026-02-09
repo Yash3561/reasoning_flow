@@ -1,0 +1,16 @@
+{
+  "label": "logicA:transport_de",
+  "logic": "logicA",
+  "topic": "transport_de",
+  "steps": [
+    "[1] Wenn die Hauptbrücke gesperrt ist, wird der Verkehr über den Ring umgeleitet.",
+    "[2] Wenn der Verkehr über den Ring umgeleitet wird, verlängert sich die Reisezeit.",
+    "[3] Für jedes Fahrzeug x gilt: Wenn x ein Schwerfahrzeug ist, muss x die Güterspur benutzen.",
+    "[4] T1 ist ein Schwerfahrzeug.",
+    "[5] Die Hauptbrücke ist gesperrt.",
+    "[6] Der Verkehr wird über den Ring umgeleitet. (aus [1] und [5])",
+    "[7] Die Reisezeit verlängert sich. (aus [2] und [6])",
+    "[8] T1 muss die Güterspur benutzen. (aus [3] und [4])",
+    "[9] Die Reisezeit verlängert sich und T1 muss die Güterspur benutzen. (aus [7] und [8])"
+  ]
+}

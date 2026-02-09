@@ -1,0 +1,19 @@
+{
+  "label": "logicC:weather_en",
+  "logic": "logicC",
+  "topic": "weather_en",
+  "steps": [
+    "[1] If a frontal system approaches the region, cloud cover increases.",
+    "[2] If cloud cover increases, precipitation becomes likely.",
+    "[3] If precipitation is likely and temperatures are below freezing, snowfall is expected.",
+    "[4] Temperatures are below freezing.",
+    "[5] A frontal system is approaching the region.",
+    "[6] For any city x, if x is coastal, then x has high humidity.",
+    "[7] Lisbon is a coastal city.",
+    "[8] For any city x, if x has high humidity, then x gets either morning fog or afternoon showers.",
+    "[9] Therefore, cloud cover increases.",
+    "[10] Therefore, precipitation becomes likely.",
+    "[11] Therefore, snowfall is expected.",
+    "[12] Lisbon has high humidity and will see either morning fog or afternoon showers."
+  ]
+}

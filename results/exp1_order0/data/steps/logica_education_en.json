@@ -1,0 +1,16 @@
+{
+  "label": "logicA:education_en",
+  "logic": "logicA",
+  "topic": "education_en",
+  "steps": [
+    "[1] If the literacy curriculum includes daily phonics instruction, then the class develops basic decoding skills.",
+    "[2] If the class develops basic decoding skills, then the class can read simple texts independently.",
+    "[3] For every student x, if x attends the after-school tutoring sessions, then x improves their assessment scores.",
+    "[4] Student Alex attends the after-school tutoring sessions.",
+    "[5] The literacy curriculum includes daily phonics instruction.",
+    "[6] Therefore, the class develops basic decoding skills.",
+    "[7] Therefore, the class can read simple texts independently.",
+    "[8] Therefore, Alex's assessment scores improve.",
+    "[9] Therefore, the class can read simple texts independently and Alex's assessment scores improve."
+  ]
+}

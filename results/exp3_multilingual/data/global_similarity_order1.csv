@@ -1,0 +1,6 @@
+,logicA:abstract,logicA:weather_en,logicA:weather_zh,logicA:weather_de,logicA:weather_ja
+logicA:abstract,1.0,0.13435468,0.21332005,0.1039903,0.13327003
+logicA:weather_en,0.13435468,1.0,0.34366745,0.29062948,0.24550822
+logicA:weather_zh,0.21332005,0.34366745,1.0,0.1847468,0.385121
+logicA:weather_de,0.1039903,0.29062948,0.1847468,1.0,0.20212305
+logicA:weather_ja,0.13327003,0.24550822,0.385121,0.20212305,1.0

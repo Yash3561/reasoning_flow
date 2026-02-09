@@ -1,0 +1,19 @@
+{
+  "label": "logicC:manufacturing_de",
+  "logic": "logicC",
+  "topic": "manufacturing_de",
+  "steps": [
+    "[1] Wenn eine eingehende Materialcharge die Qualitätsprüfung besteht, wird sie ins Lager übernommen.",
+    "[2] Wenn eine Charge ins Lager übernommen wurde, kann sie an die Bearbeitungslinie ausgegeben werden.",
+    "[3] Wenn eine Charge an die Bearbeitung ausgegeben wurde und die CNC-Maschine kalibriert ist, kann der Produktionslauf starten.",
+    "[4] Die CNC-Maschine ist kalibriert.",
+    "[5] Die eingehende Materialcharge besteht die Qualitätsprüfung.",
+    "[6] Für jeden Bediener x gilt: Wenn x die Zertifizierungsschulung abgeschlossen hat, ist x zum Betrieb der Produktionseinrichtungen berechtigt.",
+    "[7] Bediener a hat die Zertifizierungsschulung abgeschlossen.",
+    "[8] Für jeden Bediener x gilt: Wenn x zum Betrieb der Produktionseinrichtungen berechtigt ist, wird x entweder der CNC-Fräse oder dem Montageplatz zugewiesen.",
+    "[9] Daher wird die Charge ins Lager übernommen (aus [1] und [5]).",
+    "[10] Daher wird die Charge an die Bearbeitungslinie ausgegeben (aus [2] und [9]).",
+    "[11] Daher kann der Produktionslauf starten (aus [3], [10] und [4]).",
+    "[12] Daher ist Bediener a zum Betrieb der Produktionseinrichtungen berechtigt und wird entweder der CNC‑Fräse oder dem Montageplatz zugewiesen (aus [6], [7], [8])."
+  ]
+}

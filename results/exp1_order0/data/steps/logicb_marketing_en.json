@@ -1,0 +1,15 @@
+{
+  "label": "logicB:marketing_en",
+  "logic": "logicB",
+  "topic": "marketing_en",
+  "steps": [
+    "[1] If we increase ad spend on high-intent keywords, click-throughs rise.",
+    "[2] If click-throughs rise, landing page visits increase.",
+    "[3] For every customer segment x, if we deliver a personalized offer to x, then x's conversion rate improves.",
+    "[4] If landing page visits increase and segment a's conversion rate improves, total conversions increase.",
+    "[5] We increased ad spend on high-intent keywords.",
+    "[6] We delivered a personalized offer to segment a.",
+    "[7] Landing page visits increased and segment a's conversion rate improved. (from [1–3], [5], [6])",
+    "[8] Total conversions increased. (from [4] and [7])"
+  ]
+}

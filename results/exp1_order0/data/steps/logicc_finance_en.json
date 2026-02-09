@@ -1,0 +1,19 @@
+{
+  "label": "logicC:finance_en",
+  "logic": "logicC",
+  "topic": "finance_en",
+  "steps": [
+    "[1] If the firm generates stable positive free cash flow, then it can comfortably service its interest payments.",
+    "[2] If the firm can comfortably service its interest payments, then it qualifies to refinance its debt at lower rates.",
+    "[3] If the firm qualifies to refinance at lower rates and market interest rates have fallen, then the firm's weighted average cost of capital decreases.",
+    "[4] Market interest rates have fallen.",
+    "[5] The firm generates stable positive free cash flow.",
+    "[6] For every investor x, if x maintains a diversified portfolio, then x reduces unsystematic risk.",
+    "[7] Investor a maintains a diversified portfolio.",
+    "[8] For every investor x, if x reduces unsystematic risk, then x either achieves a steadier return profile or avoids large drawdowns.",
+    "[9] The firm can comfortably service its interest payments. (from [1] and [5])",
+    "[10] The firm qualifies to refinance its debt at lower rates. (from [2] and [9])",
+    "[11] The firm's weighted average cost of capital decreases. (from [3], [10], and [4])",
+    "[12] Investor a reduces unsystematic risk and either achieves a steadier return profile or avoids large drawdowns. (from [6], [7], [8])"
+  ]
+}

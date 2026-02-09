@@ -1,0 +1,16 @@
+{
+  "label": "logicA:healthcare_en",
+  "logic": "logicA",
+  "topic": "healthcare_en",
+  "steps": [
+    "[1] If a patient meets sepsis criteria, then broad-spectrum antibiotics are considered.",
+    "[2] If broad-spectrum antibiotics are considered for a patient, then blood cultures are drawn before the first dose.",
+    "[3] For every patient x, if x has a documented severe penicillin allergy, then x must avoid penicillin.",
+    "[4] Patient a has a documented severe penicillin allergy.",
+    "[5] Patient a meets sepsis criteria.",
+    "[6] Therefore, broad-spectrum antibiotics are considered for patient a.",
+    "[7] Therefore, blood cultures are drawn before the first antibiotic dose for patient a.",
+    "[8] Therefore, patient a must avoid penicillin.",
+    "[9] Blood cultures are drawn and patient a must avoid penicillin."
+  ]
+}

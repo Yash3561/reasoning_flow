@@ -1,0 +1,16 @@
+{
+  "label": "logicA:energy_en",
+  "logic": "logicA",
+  "topic": "energy_en",
+  "steps": [
+    "[1] If the PV array receives strong sunlight, then it produces adequate DC power.",
+    "[2] If the PV array produces adequate DC power, then the inverter supplies AC power to the home.",
+    "[3] For every device x, if x is Energy Star certified, then x is energy efficient.",
+    "[4] The refrigerator is Energy Star certified.",
+    "[5] The PV array receives strong sunlight.",
+    "[6] The PV array produces adequate DC power (from [1] and [5]).",
+    "[7] The inverter supplies AC power to the home (from [2] and [6]).",
+    "[8] The refrigerator is energy efficient (from [3] and [4]).",
+    "[9] The inverter supplies AC power to the home and the refrigerator is energy efficient (from [7] and [8])."
+  ]
+}

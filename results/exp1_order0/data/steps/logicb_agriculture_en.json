@@ -1,0 +1,15 @@
+{
+  "label": "logicB:agriculture_en",
+  "logic": "logicB",
+  "topic": "agriculture_en",
+  "steps": [
+    "[1] If the field is plowed, then the soil becomes loosened.",
+    "[2] If the soil is loosened, then the seedbed is suitable.",
+    "[3] For any seed lot x, if x is treated with fungicide, then x is protected against seed-borne pathogens.",
+    "[4] If the seedbed is suitable and seed lot a is protected against seed-borne pathogens, then the crop establishes well.",
+    "[5] The field is plowed.",
+    "[6] Seed lot a is treated with fungicide.",
+    "[7] The seedbed is suitable and seed lot a is protected against seed-borne pathogens.",
+    "[8] The crop establishes well."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "label": "logicB:network_security_en",
+  "logic": "logicB",
+  "topic": "network_security_en",
+  "steps": [
+    "[1] If the firewall’s default deny rule is enabled, then unsolicited inbound packets are blocked.",
+    "[2] If unsolicited inbound packets are blocked, then external hosts cannot initiate connections to internal services.",
+    "[3] For any host x, if x has the patch for CVE-2023-12345, then x is not vulnerable to CVE-2023-12345.",
+    "[4] If external hosts cannot initiate connections to internal services and the database server is not vulnerable to CVE-2023-12345, then the database server cannot be compromised from the internet via that CVE.",
+    "[5] The firewall’s default deny rule is enabled.",
+    "[6] The database server has the patch for CVE-2023-12345.",
+    "[7] Therefore, external hosts cannot initiate connections to internal services and the database server is not vulnerable to CVE-2023-12345. (from [1–3],[5],[6])",
+    "[8] Therefore, the database server cannot be compromised from the internet via CVE-2023-12345. (from [4] and [7])"
+  ]
+}

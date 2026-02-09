@@ -1,0 +1,15 @@
+{
+  "label": "logicB:healthcare_de",
+  "logic": "logicB",
+  "topic": "healthcare_de",
+  "steps": [
+    "[1] Wenn Patient A hohes Fieber und eine erhöhte Leukozytenzahl hat, ist eine akute Infektion wahrscheinlich.",
+    "[2] Wenn eine akute Infektion wahrscheinlich ist, wird eine bakterielle Ursache vermutet.",
+    "[3] Für alle Patientinnen und Patienten x gilt: Wenn x eine Penicillinallergie angibt, dann soll x Penicillin meiden.",
+    "[4] Wenn eine bakterielle Ursache vermutet wird und Patient A Penicillin meiden soll, dann behandle Patient A mit einem penicillinfreien Antibiotikum.",
+    "[5] Patient A hat hohes Fieber und eine erhöhte Leukozytenzahl.",
+    "[6] Patient A gibt eine Penicillinallergie an.",
+    "[7] Es wird eine bakterielle Ursache vermutet und Patient A soll Penicillin meiden.",
+    "[8] Behandle Patient A mit einem penicillinfreien Antibiotikum."
+  ]
+}

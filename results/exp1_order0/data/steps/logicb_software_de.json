@@ -1,0 +1,15 @@
+{
+  "label": "logicB:software_de",
+  "logic": "logicB",
+  "topic": "software_de",
+  "steps": [
+    "[1] Wenn ein Commit nach main gepusht wird, dann läuft die CI-Pipeline.",
+    "[2] Wenn die CI-Pipeline läuft, dann werden Build-Artefakte erzeugt.",
+    "[3] Für jeden Dienst x gilt: Wenn die Unit-Tests für x bestehen, dann ist x für ein Deployment zulässig.",
+    "[4] Wenn Build-Artefakte erzeugt sind und Dienst a für ein Deployment zulässig ist, dann wird Dienst a in die Staging-Umgebung bereitgestellt.",
+    "[5] Ein Commit wird nach main gepusht.",
+    "[6] Die Unit-Tests für Dienst a bestehen.",
+    "[7] Build-Artefakte sind erzeugt und Dienst a ist für ein Deployment zulässig (aus [1–3], [5] und [6]).",
+    "[8] Dienst a wird in die Staging-Umgebung bereitgestellt (aus [4] und [7])."
+  ]
+}

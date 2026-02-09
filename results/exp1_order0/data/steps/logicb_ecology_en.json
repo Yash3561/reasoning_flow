@@ -1,0 +1,15 @@
+{
+  "label": "logicB:ecology_en",
+  "logic": "logicB",
+  "topic": "ecology_en",
+  "steps": [
+    "[1] If apex predators are removed from the ecosystem, herbivore populations increase.",
+    "[2] If herbivore populations increase, grazing pressure on palatable plants becomes high.",
+    "[3] For any plant species x, if x is highly palatable to these herbivores, then x faces higher grazing risk.",
+    "[4] If grazing pressure is high and species a faces higher grazing risk, then species a declines in abundance.",
+    "[5] Apex predators were removed from the ecosystem.",
+    "[6] Species a is highly palatable to these herbivores.",
+    "[7] Grazing pressure is high and species a faces higher grazing risk (from [1–3], [5], [6]).",
+    "[8] Species a declines in abundance (from [4] and [7])."
+  ]
+}

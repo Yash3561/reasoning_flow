@@ -1,0 +1,16 @@
+{
+  "label": "logicA:psychology_de",
+  "logic": "logicA",
+  "topic": "psychology_de",
+  "steps": [
+    "[1] Wenn die Klientin/der Klient über chronische Schlafprobleme berichtet, ist das Stressniveau erhöht.",
+    "[2] Wenn das Stressniveau erhöht ist, kommt es zu verminderter Konzentration.",
+    "[3] Für jede Person gilt: Wenn sie täglich Achtsamkeit praktiziert, verringert sich ihre Angst.",
+    "[4] Die Klientin/der Klient praktiziert täglich Achtsamkeit.",
+    "[5] Die Klientin/der Klient berichtet über chronische Schlafprobleme.",
+    "[6] Daher ist das Stressniveau erhöht.",
+    "[7] Daher hat die Klientin/der Klient verminderte Konzentration.",
+    "[8] Daher ist die Angst der Klientin/des Klienten verringert.",
+    "[9] Daher hat die Klientin/der Klient verminderte Konzentration und geringere Angst."
+  ]
+}

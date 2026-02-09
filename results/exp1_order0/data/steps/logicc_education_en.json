@@ -1,0 +1,19 @@
+{
+  "label": "logicC:education_en",
+  "logic": "logicC",
+  "topic": "education_en",
+  "steps": [
+    "[1] If the students attend the prerequisite workshop, then they understand the prerequisite concept.",
+    "[2] If they understand the prerequisite concept, then they can solve basic exercises on the topic.",
+    "[3] If they can solve basic exercises and the teacher assigns a practice set, then they pass the formative quiz.",
+    "[4] The teacher assigns a practice set.",
+    "[5] The students attend the prerequisite workshop.",
+    "[6] For every student x, if x completes all weekly assignments, then x understands the core material.",
+    "[7] Alex completes all weekly assignments.",
+    "[8] For every student x, if x understands the core material, then x either scores highly on the final exam or produces a strong capstone project.",
+    "[9] They understand the prerequisite concept.",
+    "[10] They can solve basic exercises on the topic.",
+    "[11] They pass the formative quiz.",
+    "[12] Alex understands the core material and either scores highly on the final exam or produces a strong capstone project."
+  ]
+}

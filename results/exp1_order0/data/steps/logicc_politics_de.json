@@ -1,0 +1,19 @@
+{
+  "label": "logicC:politics_de",
+  "logic": "logicC",
+  "topic": "politics_de",
+  "steps": [
+    "[1] Wenn die Regierungskoalition für den Gesetzentwurf eine Stimmenmehrheit hat, dann wird der Gesetzentwurf vom Parlament verabschiedet.",
+    "[2] Wenn der Gesetzentwurf vom Parlament verabschiedet wird, dann wird er dem Staatsoberhaupt zur Unterzeichnung vorgelegt.",
+    "[3] Wenn der Gesetzentwurf dem Staatsoberhaupt zur Unterzeichnung vorgelegt wird und das Staatsoberhaupt ihn unterzeichnet, dann wird der Gesetzentwurf zum Gesetz.",
+    "[4] Das Staatsoberhaupt unterzeichnet den Gesetzentwurf.",
+    "[5] Die Regierungskoalition hat für den Gesetzentwurf eine Stimmenmehrheit.",
+    "[6] Für jede kandidierende Person x gilt: Wenn x die gesetzlichen Voraussetzungen erfüllt, dann ist x zur Kandidatur berechtigt.",
+    "[7] Die kandidierende Person a erfüllt die gesetzlichen Voraussetzungen.",
+    "[8] Für jede kandidierende Person x gilt: Wenn x zur Kandidatur berechtigt ist, dann erhält x entweder die Unterstützung einer Partei oder tritt als Unabhängige(r) an.",
+    "[9] Der Gesetzentwurf wird vom Parlament verabschiedet.",
+    "[10] Der Gesetzentwurf wird dem Staatsoberhaupt zur Unterzeichnung vorgelegt.",
+    "[11] Der Gesetzentwurf wird zum Gesetz.",
+    "[12] Die kandidierende Person a ist zur Kandidatur berechtigt und erhält entweder die Unterstützung einer Partei oder tritt als Unabhängige(r) an."
+  ]
+}

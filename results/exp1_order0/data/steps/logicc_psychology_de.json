@@ -1,0 +1,19 @@
+{
+  "label": "logicC:psychology_de",
+  "logic": "logicC",
+  "topic": "psychology_de",
+  "steps": [
+    "[1] Wenn die Klientin/der Klient chronischen Stress berichtet, treten Schlafstörungen auf.",
+    "[2] Wenn Schlafstörungen auftreten, entsteht Tagesmüdigkeit.",
+    "[3] Wenn Tagesmüdigkeit vorliegt und die Arbeitsanforderungen hoch sind, sinkt die Arbeitsleistung.",
+    "[4] Die Klientin/der Klient hat hohe Arbeitsanforderungen.",
+    "[5] Die Klientin/der Klient berichtet chronischen Stress.",
+    "[6] Für alle Personen x gilt: Wenn x anhaltende kognitive Verzerrungen zeigt, profitiert x von KVT.",
+    "[7] Person a zeigt anhaltende kognitive Verzerrungen.",
+    "[8] Für alle Personen x gilt: Wenn x von KVT profitiert, sollte x entweder kognitive Umstrukturierung oder Verhaltensaktivierung erhalten.",
+    "[9] Schlafstörungen treten auf (aus [1] und [5]).",
+    "[10] Tagesmüdigkeit entsteht (aus [2] und [9]).",
+    "[11] Die Arbeitsleistung sinkt (aus [3] und [10] und [4]).",
+    "[12] Person a profitiert von KVT und sollte entweder kognitive Umstrukturierung oder Verhaltensaktivierung erhalten (aus [6] und [7] und [8])."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "label": "logicA:network_security_en",
+  "logic": "logicA",
+  "topic": "network_security_en",
+  "steps": [
+    "[1] If a host makes repeated connections to a known command-and-control (C2) domain, the host is classified as compromised.",
+    "[2] If a host is classified as compromised, the host is isolated from the network.",
+    "[3] For any asset x, if x lacks the critical security patch KB-5021234, then x is vulnerable to remote code execution.",
+    "[4] Workstation W-17 lacks the critical security patch KB-5021234.",
+    "[5] Workstation W-17 made repeated connections to a known command-and-control (C2) domain.",
+    "[6] Workstation W-17 is classified as compromised (from [1] and [5]).",
+    "[7] Workstation W-17 is isolated from the network (from [2] and [6]).",
+    "[8] Workstation W-17 is vulnerable to remote code execution (from [3] and [4]).",
+    "[9] Workstation W-17 is isolated from the network and vulnerable to remote code execution (from [7] and [8])."
+  ]
+}

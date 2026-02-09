@@ -7,21 +7,34 @@
 
 *ICLR 2026*
 
-**Original Authors:**
-[**Yufa Zhou***](https://masterzhou1.github.io/), [**Yixiao Wang***](https://yixiao-wang-stats.github.io/), [**Xunjian Yin***](https://xunjianyin.github.io/),
-[**Shuyan Zhou**](https://www.shuyanzhou.com/), [**Anru R. Zhang**](https://anruzhang.github.io/)
-
-**Duke University** | *Equal contribution
+**Original Authors:** [Yufa Zhou](https://masterzhou1.github.io/), [Yixiao Wang](https://yixiao-wang-stats.github.io/), [Xunjian Yin](https://xunjianyin.github.io/), [Shuyan Zhou](https://www.shuyanzhou.com/), [Anru R. Zhang](https://anruzhang.github.io/) — **Duke University**
 
 ---
 
-## 🔬 Extension: Hyperbolic Geodesic Analysis
+## Research Extension: Non-Euclidean Geometry of Reasoning
 
-> **Hypothesis:** LLM reasoning paths are geodesics (straight lines) in hyperbolic space, not complex curves in Euclidean space.
+This repository has been extended to investigate the **intrinsic manifold geometry** of LLM reasoning trajectories. While the original framework operates in Euclidean space, we hypothesize that logical reasoning—which is inherently hierarchical and convergent—is better represented in **Hyperbolic space**.
 
-This fork extends the original Duke paper with a **differential geometry analysis** that projects LLM hidden states onto the Poincaré Ball manifold to test if reasoning follows hyperbolic geodesics.
+### Key Discovery: The Hyperbolic Geodesic Hypothesis
 
-### Key Discovery: 41% Curvature Reduction
+By projecting the hidden states into a **Poincaré Ball** ($c = -1$), we observed a significant reduction in the complexity of reasoning paths.
+
+![Curvature Comparison](results/curvature_comparison_chart.png)
+
+#### 1. Numerical Stability & Boundary Collapse
+
+Initial experiments revealed a **"Boundary Collapse"** artifact where high-magnitude LLM hidden states clustered at the Poincaré boundary ($Norm \approx 0.999$), artificially inflating curvature metrics. 
+
+**The Problem:**
+- LLM hidden states have very large norms (50-100+)
+- The Poincaré exponential map uses `tanh()`, which saturates for large inputs
+- Result: All points collapsed to the boundary, where the metric tensor diverges
+
+**The Solution:** We implemented **L2-Normalization** before the exponential map, centering the embeddings ($Norm \approx 0.46$) and enabling stable geometric analysis.
+
+#### 2. Curvature Reduction Results
+
+Using the stable projection, we compared **Menger Curvature** across 240+ reasoning trajectories:
 
 | Space | Menger Curvature | Interpretation |
 |-------|------------------|----------------|
@@ -29,71 +42,74 @@ This fork extends the original Duke paper with a **differential geometry analysi
 | **Poincaré (Hyperbolic)** | ~3.9 | Reasoning straightens into geodesics |
 | **Reduction** | **41%** | Paths are significantly straighter in hyperbolic space |
 
-![Curvature Comparison](results/curvature_comparison_chart.png)
+**Conclusion:** LLM reasoning "straightens out" in hyperbolic space. This confirms that logical flows are closer to **hyperbolic geodesics** than Euclidean lines. The "complex turns" observed in the original paper are partially artifacts of a mismatched coordinate system.
 
-### What This Means
+### Open Questions (Future Work)
 
-The "complex logical turns" identified in the original Euclidean analysis are **distortions caused by the wrong coordinate system**. When viewed through hyperbolic geometry:
-
-- Reasoning paths become **41% straighter** (lower Menger curvature)
-- This suggests LLMs internally organize logic on a **hierarchical manifold**
-- Euclidean projections (PCA) are **geometrically misleading**
-
-### Technical Challenge: Boundary Collapse
-
-Our first attempt showed a **4.7x curvature *increase*** in hyperbolic space—the opposite of our hypothesis! Investigation revealed:
-
-1. **Problem:** LLM hidden states have very large norms (50-100+)
-2. **Failure Mode:** The Poincaré exponential map uses `tanh()`, which maps large values to ~1.0
-3. **Result:** All points collapsed to the ball's boundary (norm ≈ 0.999), where the metric diverges
-
-**Solution:** L2-normalize embeddings before projection, placing points safely inside the ball (norm ≈ 0.46).
+1. **OOD Generalization:** Does the curvature drop hold for out-of-distribution logic?
+2. **Hallucination Detection:** Can we train a probe to detect hallucinations based on geodesic deviation?
+3. **Scale Invariance:** How does sectional curvature change across model scales (1B → 70B)?
+4. **Hyperbolic Fine-Tuning:** Can we force models to follow straighter (more logical) paths?
 
 ---
 
-## Hyperbolic Analysis Scripts
+## Quick Start
 
-### Quick Start
+### Installation
 
 ```bash
-# 1. Run the original Euclidean analysis
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### Run the Hyperbolic Analysis
+
+```bash
+# Step 1: Generate embeddings (original Euclidean analysis)
 python cot-hidden-dynamic.py \
   --hf_model Qwen/Qwen2.5-0.5B \
   --data_file data/demo_subset.json \
   --similarity_order 0 \
   --save_dir results/exp1_order0
 
-# 2. Run hyperbolic curvature analysis (L2-normalized)
-python hyperbolic_l2_normalized.py \
+# Step 2: Run hyperbolic curvature analysis (L2-stabilized)
+python experiments/hyperbolic_l2_normalized.py \
   --data_dir results/exp1_order0/data \
-  --output curvature_l2_normalized.csv
+  --output results/curvature_report.csv
 
-# 3. Validate numerical stability
-python validate_spherical.py \
+# Step 3: Validate numerical stability
+python experiments/validate_spherical.py \
   --data_dir results/exp1_order0/data
 
-# 4. Generate comparison chart
-python generate_chart.py
+# Step 4: Generate visualization
+python experiments/generate_chart.py
 ```
 
-### Hyperbolic Analysis Files
+---
 
-| File | Description |
-|------|-------------|
-| `hyperbolic_l2_normalized.py` | **Main script** - L2-normalized Poincaré projection with Menger curvature |
-| `hyperbolic_curvature_analysis.py` | Initial Lorentz hyperboloid version (for comparison) |
-| `hyperbolic_analysis_v2.py` | Poincaré Ball version (pre-normalization fix) |
-| `validate_spherical.py` | Numerical stability checker (detects boundary collapse) |
-| `generate_chart.py` | Creates the curvature comparison visualization |
+## Repository Structure
 
-### Results Files
-
-| File | Description |
-|------|-------------|
-| `curvature_l2_normalized.csv` | ✅ **Valid results** - 41% curvature drop |
-| `curvature_comparison_exp1.csv` | ❌ Naive Lorentz (boundary collapse artifact) |
-| `curvature_poincare.csv` | ❌ Pre-normalization (boundary collapse artifact) |
-| `results/curvature_comparison_chart.pdf` | Publication-ready visualization |
+```
+Reasoning-Flow/
+├── data/                    # LogicBench dataset
+│   ├── all_final_data.json  # Full dataset (243 samples)
+│   └── demo_subset.json     # Quick test subset (15 samples)
+├── src/                     # Original Duke paper source code
+│   ├── cot-hidden-dynamic.py
+│   ├── compute_similarity_averages.py
+│   ├── generate_dataset.py
+│   └── utils.py
+├── experiments/             # Hyperbolic extension (NEW)
+│   ├── hyperbolic_l2_normalized.py   # L2-stabilized Poincaré analysis
+│   ├── validate_spherical.py         # Numerical stability checker
+│   └── generate_chart.py             # Visualization generator
+├── results/                 # Figures and CSVs
+│   ├── curvature_comparison_chart.png
+│   └── curvature_l2_normalized.csv
+├── assets/                  # Original paper figures
+├── README.md
+└── requirements.txt
+```
 
 ---
 
@@ -101,63 +117,19 @@ python generate_chart.py
 
 We study how large language models (LLMs) **reason through their embeddings** by introducing a **geometric framework of reasoning flows**, where reasoning unfolds as trajectories in representation space.
 
-By **disentangling logic from semantics**—using identical natural deduction propositions expressed through diverse semantic carriers—we test whether LLMs internalize logical structure beyond surface form.
+### Key Findings (Zhou et al., 2026)
 
-### Key Findings
+1. **LLM reasoning forms smooth flows** in embedding space
+2. **Logical statements act as local controllers** governing flow velocity
+3. **Order-0 (positions):** Embeddings cluster by surface semantics
+4. **Order-1 (velocities):** Same-logic trajectories align across topics/languages
+5. **Order-2 (curvature):** Logic signal strengthens beyond surface semantics
 
-1. **LLM reasoning forms smooth flows** in embedding space.
-2. **Logical statements act as local controllers** governing the velocity of these flows.
-3. **Order-0 (positions):** Embeddings cluster by surface-level semantics (topic, language).
-4. **Order-1 (velocities):** Trajectories with same logic align across topics/languages.
-5. **Order-2 (curvature):** Logic signal strengthens beyond surface semantics.
-
----
-
-## Installation
-
-```bash
-python -m venv .venv && source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-pip install -r requirements.txt
-# Install PyTorch appropriate for your system: https://pytorch.org/get-started/locally/
-```
-
-## Data
-
-- **Full dataset:** `data/all_final_data.json`
-- **Demo subset:** `data/demo_subset.json` (15 samples for quick testing)
-- Generate new data using `generate_dataset.py`
-
----
-
-## Original Euclidean Analysis
-
-```bash
-python cot-hidden-dynamic.py \
-  --hf_model /path/to/Qwen3-0.6B \
-  --data_file data/all_final_data.json \
-  --pooling step_mean --accumulation cumulative \
-  --similarity_order 1 \
-  --save_dir results/demo/Qwen3-0.6B
-```
-
-**Outputs:**
-- PCA trajectory PDFs per logic group
-- Global similarity matrix
-- Saved embeddings under `results/.../data/`
-
----
-
-## Visualizations
-
-**PCA Trajectories (Euclidean)**
+### Visualizations
 
 | **3D PCA Trajectories** | **2D PCA Projection** |
 |-------------------------|----------------------|
 | ![3D PCA](assets/reasoning_flows_pca_math500_3d.png) | ![2D PCA](assets/reasoning_flows_pca_math500_2d.png) |
-
-**Qwen3 0.6B Similarity Matrices**
-
-![Similarity matrices](assets/similarity_qwen3_06B.png)
 
 ---
 
@@ -168,19 +140,19 @@ python cot-hidden-dynamic.py \
 @inproceedings{zhou2025geometry,
   title     = {The Geometry of Reasoning: Flowing Logics in Representation Space},
   author    = {Zhou, Yufa and Wang, Yixiao and Yin, Xunjian and Zhou, Shuyan and Zhang, Anru R.},
-  booktitle = {The Fourteenth International Conference on Learning Representations},
+  booktitle = {ICLR 2026},
   year      = {2026},
   url       = {https://openreview.net/forum?id=ixr5Pcabq7}
 }
 ```
 
-**Hyperbolic Extension (This Fork):**
+**Hyperbolic Extension:**
 ```bibtex
-@misc{hyperbolic_reasoning_2026,
+@misc{choudhary2026hyperbolic,
   title  = {Hyperbolic Geodesics as the Manifold of Logical Reasoning},
-  author = {Yash Choudhary},
+  author = {Choudhary, Yash},
   year   = {2026},
-  note   = {Extension of Zhou et al. (2026) demonstrating 41\% curvature reduction in Poincaré space}
+  note   = {Extension demonstrating 41\% curvature reduction in Poincaré space}
 }
 ```
 
@@ -188,6 +160,5 @@ python cot-hidden-dynamic.py \
 
 ## Contact
 
-**Original Paper:** Yufa Zhou - [yufa.zhou@duke.edu](mailto:yufa.zhou@duke.edu)
-
+**Original Paper:** Yufa Zhou — [yufa.zhou@duke.edu](mailto:yufa.zhou@duke.edu)  
 **Hyperbolic Extension:** Yash Choudhary

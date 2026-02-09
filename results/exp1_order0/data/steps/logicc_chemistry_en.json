@@ -1,0 +1,19 @@
+{
+  "label": "logicC:chemistry_en",
+  "logic": "logicC",
+  "topic": "chemistry_en",
+  "steps": [
+    "[1] If hydrochloric acid is added to sodium carbonate solution, carbon dioxide gas evolves.",
+    "[2] If carbon dioxide is produced, bubbling it through limewater turns the limewater milky.",
+    "[3] If limewater turns milky and the milkiness later clears on continued CO2 flow, the gas is confirmed as carbon dioxide.",
+    "[4] On continued passage of the gas, the limewater’s milkiness clears.",
+    "[5] Hydrochloric acid is added to sodium carbonate solution.",
+    "[6] For any substance x, if x is a Brønsted acid, then x donates a proton in water.",
+    "[7] Substance a (acetic acid) is a Brønsted acid.",
+    "[8] For any substance x, if x donates a proton in water, then x either lowers the pH or effervesces with carbonate to release CO2.",
+    "[9] Carbon dioxide gas evolves. (from [1] and [5])",
+    "[10] The limewater turns milky. (from [2] and [9])",
+    "[11] The gas is confirmed as carbon dioxide. (from [3] and [10] and [4])",
+    "[12] a donates a proton and either lowers the pH or effervesces with carbonate to release CO2. (from [6],[7],[8])"
+  ]
+}

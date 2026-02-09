@@ -1,0 +1,15 @@
+{
+  "label": "logicB:weather_de",
+  "logic": "logicB",
+  "topic": "weather_de",
+  "steps": [
+    "[1] Wenn sich ein starker auflandiger Wind entwickelt, dann dringt feuchte Meeresluft ins Landesinnere vor.",
+    "[2] Wenn feuchte Meeresluft ins Landesinnere vordringt, dann verdichtet sich die Bewölkung.",
+    "[3] Für jede Station x gilt: Wenn eine Seewindfront x erreicht, dann meldet x steigende Luftfeuchtigkeit.",
+    "[4] Wenn sich die Bewölkung verdichtet und Harbor Point steigende Luftfeuchtigkeit meldet, dann ist in Kürze Regen wahrscheinlich.",
+    "[5] Ein starker auflandiger Wind entwickelt sich.",
+    "[6] Eine Seewindfront erreicht Harbor Point.",
+    "[7] Die Bewölkung verdichtet sich und Harbor Point meldet steigende Luftfeuchtigkeit. (aus [1–3], [5], [6])",
+    "[8] Daher ist in Kürze Regen wahrscheinlich. (aus [4] und [7])"
+  ]
+}

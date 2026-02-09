@@ -1,0 +1,15 @@
+{
+  "label": "logicB:robotics_de",
+  "logic": "logicB",
+  "topic": "robotics_de",
+  "steps": [
+    "[1] Wenn die Hauptversorgung eingeschaltet ist, sind die Motorantriebe freigeschaltet.",
+    "[2] Wenn die Motorantriebe freigeschaltet sind, kann sich der Roboter bewegen.",
+    "[3] Für jeden Aktuator x gilt: Wenn x referenziert ist, dann hat x eine bekannte Pose.",
+    "[4] Wenn der Roboter sich bewegen kann und arm_1 eine bekannte Pose hat, dann kann die geplante Bewegung ausgeführt werden.",
+    "[5] Die Hauptversorgung ist eingeschaltet.",
+    "[6] arm_1 ist referenziert.",
+    "[7] Der Roboter kann sich bewegen und arm_1 hat eine bekannte Pose (aus [1–3], [5], [6]).",
+    "[8] Die geplante Bewegung kann ausgeführt werden (aus [4] und [7])."
+  ]
+}

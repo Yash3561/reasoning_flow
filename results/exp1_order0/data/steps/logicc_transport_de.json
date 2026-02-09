@@ -1,0 +1,19 @@
+{
+  "label": "logicC:transport_de",
+  "logic": "logicC",
+  "topic": "transport_de",
+  "steps": [
+    "[1] Wenn ein Unfall die Autobahn 7 blockiert, wird der Verkehr von der A7 umgeleitet.",
+    "[2] Wenn der Verkehr von der A7 umgeleitet wird, folgen die Fahrzeuge der ausgeschilderten Umleitung.",
+    "[3] Wenn die Fahrzeuge der ausgeschilderten Umleitung folgen und die Umleitungsstrecke offen ist, erreichen die Fahrzeuge ihr Ziel.",
+    "[4] Die Umleitungsstrecke ist offen.",
+    "[5] Ein Unfall blockiert die Autobahn 7.",
+    "[6] Für jedes Fahrzeug x gilt: Wenn x zur Wartung eingeplant ist, dann benötigt x eine Inspektion.",
+    "[7] Bus A12 ist zur Wartung eingeplant.",
+    "[8] Für jedes Fahrzeug x gilt: Wenn x eine Inspektion benötigt, dann besteht x die Inspektion oder wird außer Betrieb genommen.",
+    "[9] Der Verkehr wird von der A7 umgeleitet. (aus [1] und [5])",
+    "[10] Die Fahrzeuge folgen der ausgeschilderten Umleitung. (aus [2] und [9])",
+    "[11] Die Fahrzeuge erreichen ihr Ziel. (aus [3] und [10] und [4])",
+    "[12] Bus A12 benötigt eine Inspektion, und er besteht die Inspektion oder wird außer Betrieb genommen. (aus [6],[7],[8])"
+  ]
+}

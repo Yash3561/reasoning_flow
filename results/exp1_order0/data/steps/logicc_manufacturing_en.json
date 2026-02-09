@@ -1,0 +1,19 @@
+{
+  "label": "logicC:manufacturing_en",
+  "logic": "logicC",
+  "topic": "manufacturing_en",
+  "steps": [
+    "[1] If an incoming material batch passes quality inspection, then it is accepted into inventory.",
+    "[2] If a batch is accepted into inventory, then it can be issued to the machining line.",
+    "[3] If a batch has been issued to machining and the CNC machine is calibrated, then the production run can begin.",
+    "[4] The CNC machine is calibrated.",
+    "[5] The incoming material batch passes quality inspection.",
+    "[6] For any operator x, if x has completed certification training, then x is authorized to run production equipment.",
+    "[7] Operator a has completed certification training.",
+    "[8] For any operator x, if x is authorized to run production equipment, then x is assigned either to the CNC mill or to the assembly station.",
+    "[9] Therefore, the batch is accepted into inventory (from [1] and [5]).",
+    "[10] Therefore, the batch is issued to the machining line (from [2] and [9]).",
+    "[11] Therefore, the production run can begin (from [3], [10], and [4]).",
+    "[12] Therefore, operator a is authorized to run production equipment and is assigned either to the CNC mill or to the assembly station (from [6], [7], [8])."
+  ]
+}

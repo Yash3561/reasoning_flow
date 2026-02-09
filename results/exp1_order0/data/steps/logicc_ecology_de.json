@@ -1,0 +1,19 @@
+{
+  "label": "logicC:ecology_de",
+  "logic": "logicC",
+  "topic": "ecology_de",
+  "steps": [
+    "[1] Wenn der Bach ein durchgehendes Uferkronendach hat, dann erhält der Bach gleichmäßigen Schatten.",
+    "[2] Wenn der Bach gleichmäßigen Schatten erhält, dann bleibt die Wassertemperatur niedrig.",
+    "[3] Wenn die Wassertemperatur niedrig bleibt und der Gehalt an gelöstem Sauerstoff hoch ist, dann reproduzieren sich Forellen erfolgreich.",
+    "[4] Der Gehalt an gelöstem Sauerstoff ist hoch.",
+    "[5] Der Bach hat ein durchgehendes Uferkronendach.",
+    "[6] Für jede Art x gilt: Wenn x eine Schlüsselart in diesem Einzugsgebiet ist, dann strukturiert x die Lebensgemeinschaft stark.",
+    "[7] Art a ist eine Schlüsselart in diesem Einzugsgebiet.",
+    "[8] Für jede Art x gilt: Wenn x die Lebensgemeinschaft stark strukturiert, dann erhöht x entweder die einheimische Biodiversität oder stabilisiert die trophische Dynamik.",
+    "[9] Der Bach erhält gleichmäßigen Schatten (aus [1] und [5]).",
+    "[10] Die Wassertemperatur bleibt niedrig (aus [2] und [9]).",
+    "[11] Forellen reproduzieren sich erfolgreich (aus [3] und [10] und [4]).",
+    "[12] Art a strukturiert die Lebensgemeinschaft stark und erhöht entweder die einheimische Biodiversität oder stabilisiert die trophische Dynamik (aus [6],[7],[8])."
+  ]
+}
