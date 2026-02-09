@@ -161,4 +161,4 @@ We study how large language models (LLMs) **reason through their embeddings** by
 ## Contact
 
 **Original Paper:** Yufa Zhou — [yufa.zhou@duke.edu](mailto:yufa.zhou@duke.edu)  
-**Hyperbolic Extension:** Yash Choudhary
+**Hyperbolic Extension:** Yash Chaudhary
