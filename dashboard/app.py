@@ -28,7 +28,18 @@ st.markdown(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-    * { font-family: 'Poppins', sans-serif !important; }
+    /* Text uses Poppins; emoji glyphs fall back to system emoji fonts */
+    * { font-family: 'Poppins', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif !important; }
+
+    /* Restore Streamlit's Material Symbols icon font — prevents icon ligatures showing as raw text */
+    .material-symbols-rounded,
+    [class*="material-symbols"],
+    [class*="material-icons"],
+    [data-testid="stIconMaterial"],
+    .stIconMaterial,
+    span[style*="Material Symbols"] {
+        font-family: 'Material Symbols Rounded', 'Material Icons', sans-serif !important;
+    }
 
     html, body, [data-testid="stAppViewContainer"] {
         background-color: #0e1117;
@@ -293,6 +304,88 @@ with tab1:
         unsafe_allow_html=True,
     )
 
+    # ── Dataset explanation ───────────────────────────────────────────────────
+    st.markdown("<div class='section-header'>Dataset &amp; Experimental Setup</div>", unsafe_allow_html=True)
+
+    ds_col1, ds_col2 = st.columns([1, 1])
+
+    with ds_col1:
+        st.markdown(
+            """
+            <div style='background:#161b22; border:1px solid #30363d; border-radius:10px; padding:18px 24px; height:100%;'>
+                <div style='font-size:1.05rem; font-weight:700; color:#58a6ff; margin-bottom:10px;'>🧩 Logic Types (from LogicBench)</div>
+                <table style='width:100%; border-collapse:collapse;'>
+                    <tr style='border-bottom:1px solid #30363d;'>
+                        <td style='padding:8px 4px; font-weight:600; color:#e3b341; width:80px;'>Logic A</td>
+                        <td style='padding:8px 4px; color:#c9d1d9;'>
+                            <b>Modus Ponens</b> — "If P then Q; P is true; therefore Q."
+                            The most fundamental rule of deductive inference.
+                            Example: <em>"If it rains, the ground gets wet. It is raining. Therefore the ground is wet."</em>
+                        </td>
+                    </tr>
+                    <tr style='border-bottom:1px solid #30363d;'>
+                        <td style='padding:8px 4px; font-weight:600; color:#3fb950;'>Logic B</td>
+                        <td style='padding:8px 4px; color:#c9d1d9;'>
+                            <b>Transitivity</b> — "If A→B and B→C, then A→C."
+                            Chains multiple implications together.
+                            Example: <em>"Alice is taller than Bob. Bob is taller than Carol. Therefore Alice is taller than Carol."</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='padding:8px 4px; font-weight:600; color:#f78166;'>Logic C</td>
+                        <td style='padding:8px 4px; color:#c9d1d9;'>
+                            <b>Universal Instantiation</b> — "All X are Y; Z is an X; therefore Z is a Y."
+                            Applies a universal rule to a specific instance.
+                            Example: <em>"All mammals breathe air. Dolphins are mammals. Therefore dolphins breathe air."</em>
+                        </td>
+                    </tr>
+                </table>
+                <div style='margin-top:12px; font-size:0.82rem; color:#8b949e;'>
+                    Source: <b>LogicBench</b> — a benchmark for evaluating logical reasoning in LLMs
+                    across multiple reasoning patterns and languages.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with ds_col2:
+        st.markdown(
+            """
+            <div style='background:#161b22; border:1px solid #30363d; border-radius:10px; padding:18px 24px; height:100%;'>
+                <div style='font-size:1.05rem; font-weight:700; color:#58a6ff; margin-bottom:10px;'>🌐 Languages &amp; Model</div>
+                <table style='width:100%; border-collapse:collapse;'>
+                    <tr style='border-bottom:1px solid #21262d;'>
+                        <td style='padding:7px 4px; font-weight:600; color:#58a6ff; width:90px;'>EN 🇬🇧</td>
+                        <td style='padding:7px 4px; color:#c9d1d9;'><b>English</b> — primary language of LogicBench; baseline for all comparisons.</td>
+                    </tr>
+                    <tr style='border-bottom:1px solid #21262d;'>
+                        <td style='padding:7px 4px; font-weight:600; color:#f78166;'>ZH 🇨🇳</td>
+                        <td style='padding:7px 4px; color:#c9d1d9;'><b>Chinese (Mandarin)</b> — logographically distinct script; tests non-Latin surface form.</td>
+                    </tr>
+                    <tr style='border-bottom:1px solid #21262d;'>
+                        <td style='padding:7px 4px; font-weight:600; color:#3fb950;'>DE 🇩🇪</td>
+                        <td style='padding:7px 4px; color:#c9d1d9;'><b>German</b> — morphologically rich; compound nouns and strict word order differ from EN.</td>
+                    </tr>
+                    <tr style='border-bottom:1px solid #21262d;'>
+                        <td style='padding:7px 4px; font-weight:600; color:#d2a8ff;'>JA 🇯🇵</td>
+                        <td style='padding:7px 4px; color:#c9d1d9;'><b>Japanese</b> — SOV word order + mixed script (Kanji/Kana); most typologically distant from EN.</td>
+                    </tr>
+                    <tr>
+                        <td style='padding:7px 4px; font-weight:600; color:#e3b341;'>Abstract</td>
+                        <td style='padding:7px 4px; color:#c9d1d9;'><b>Symbolic / language-free</b> — pure logical form with placeholder variables (P, Q, X). Used in multilingual experiment.</td>
+                    </tr>
+                </table>
+                <div style='margin-top:12px; font-size:0.82rem; color:#8b949e;'>
+                    <b>Model:</b> Qwen2.5-0.5B · <b>Layer:</b> final hidden state · <b>Dim:</b> 896
+                    · <b>Steps/trajectory:</b> 9 · <b>Total trajectories:</b> 244
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("---")
 
     col_left, col_right = st.columns([1, 1])
