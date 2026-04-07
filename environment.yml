@@ -1,0 +1,36 @@
+name: reasoning_flow
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - torch==2.4.0+cu124
+    - torchvision==0.19.0+cu124
+    - torchaudio==2.4.0+cu124
+    - --extra-index-url https://download.pytorch.org/whl/cu124
+    - transformers==4.45.0
+    - accelerate==0.34.0
+    - tokenizers==0.20.0
+    - datasets==3.0.0
+    - huggingface-hub==0.25.0
+    - geoopt==0.5.0          # Poincaré / Lorentz hyperbolic ops
+    - numpy==1.26.4
+    - pandas==2.2.3
+    - scipy==1.14.1
+    - scikit-learn==1.5.2
+    - matplotlib==3.9.2
+    - seaborn==0.13.2
+    - streamlit==1.38.0      # your existing dashboard
+    - tqdm==4.66.5
+    - einops==0.8.0
+    - sentencepiece==0.2.0
+    - protobuf==5.28.2
+    - ipykernel==6.29.5      # for Jupyter on OnDemand
+    - ipywidgets==8.1.5
+    - jupyter==1.1.1
+    - pyyaml==6.0.2
+    - jsonlines==4.0.0

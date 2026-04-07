@@ -1,0 +1,97 @@
+[
+  {
+    "mode": "baseline",
+    "lambda": 0.0,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": -0.2,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": -0.1,
+    "honesty": 0.64
+  },
+  {
+    "mode": "euclidean",
+    "lambda": -0.05,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": -0.01,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": 0.0,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": 0.01,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": 0.05,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": 0.1,
+    "honesty": 0.6
+  },
+  {
+    "mode": "euclidean",
+    "lambda": 0.2,
+    "honesty": 0.64
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": -0.2,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": -0.1,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": -0.05,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": -0.01,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": 0.0,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": 0.01,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": 0.05,
+    "honesty": 0.6
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": 0.1,
+    "honesty": 0.64
+  },
+  {
+    "mode": "hyperbolic",
+    "lambda": 0.2,
+    "honesty": 0.6
+  }
+]

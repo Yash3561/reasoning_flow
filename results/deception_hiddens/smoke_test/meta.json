@@ -1,0 +1,7 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "layer": 24,
+  "n_steps": 9,
+  "max_new_tokens": 50,
+  "n_pairs": 5
+}
