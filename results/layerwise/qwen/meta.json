@@ -1,0 +1,6 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n_layers": 28,
+  "n_pairs": 30,
+  "hidden_dim": 3584
+}
