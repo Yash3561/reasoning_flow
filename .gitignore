@@ -35,3 +35,6 @@ debug_*.log
 # Temporary files
 *.tmp
 *.temp
+*.npy
+plots.zip
+poincare_plots.zip
