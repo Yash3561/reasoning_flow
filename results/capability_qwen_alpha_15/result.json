@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "best_layer": 14,
+  "alpha": 15.0,
+  "n_test": 40,
+  "acc_no_steering": 85.0,
+  "acc_with_steering": 85.0,
+  "delta": 0.0
+}

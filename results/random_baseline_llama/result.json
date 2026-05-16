@@ -1,0 +1,16 @@
+{
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "layer": 20,
+  "alpha": 8.0,
+  "baseline": 12.5,
+  "real": 17.5,
+  "random_mean": 7.5,
+  "random_std": 4.183300132670378,
+  "random_rates": [
+    2.5,
+    12.5,
+    5.0,
+    5.0,
+    12.5
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "alpha": 8.0,
+  "n_test": 40,
+  "baseline_rate": 0.125,
+  "layer_rates": {
+    "18": 0.175,
+    "20": 0.175,
+    "24": 0.125
+  },
+  "best_layer": 18,
+  "best_rate": 0.175,
+  "improvement": 0.04999999999999999
+}

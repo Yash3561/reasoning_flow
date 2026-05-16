@@ -1,0 +1,9 @@
+{
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "best_layer": 20,
+  "alpha": 10.0,
+  "n_test": 40,
+  "acc_no_steering": 97.5,
+  "acc_with_steering": 90.0,
+  "delta": -7.5
+}

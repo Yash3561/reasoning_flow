@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "layer": 14,
+  "alpha": 15.0,
+  "baseline": 37.5,
+  "real": 70.0,
+  "random_mean": 47.0,
+  "random_std": 6.782329983125266,
+  "random_rates": [
+    57.49999999999999,
+    42.5,
+    37.5,
+    50.0,
+    47.5
+  ]
+}
